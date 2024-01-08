@@ -4,16 +4,13 @@ import {
 	Table, TableBody, TableCell, TableContainer, TableRow
 } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import { COLOR } from '../theme';
+import { COLOR } from '../../theme';
 import Row from './Row';
-import TableHeader from './TableHeader';
-import { Data, Order, SortableFields } from '../utils/types';
-import { getComparator, stableSort } from '../utils/helpers';
+import TableHeader from './Header';
+import { Data, Order, SortableFields } from '../../utils/types';
+import { getComparator, stableSort } from '../../utils/helpers';
 import MenuBox from '../MenuBox';
-import LastIcon from '../icons/Last';
-import NextIcon from '../icons/Next';
-import PreviousIcon from '../icons/Previous';
-import FirstIcon from '../icons/First';
+import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';
 
 const useStyles = makeStyles()((_defaultTheme, _props) => {
 	return {

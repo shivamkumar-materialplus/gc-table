@@ -1,10 +1,8 @@
 import React from 'react'
 import { Box, IconButton, Stack, Typography } from "@mui/material";
-import EditIcon from '../icons/Edit';
-import ViewIcon from '../icons/View';
-import ThreeDotsIcon from '../icons/ThreeDots';
-import { Data } from '../utils/types';
-import { COLOR } from '../theme';
+import { EditIcon, ViewIcon, ThreeDotsIcon } from '../../icons';
+import { Data } from '../../utils/types';
+import { COLOR } from '../../theme';
 
 type IconLabelProps = {
 	icon: React.JSX.Element;

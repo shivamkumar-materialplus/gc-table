@@ -1,11 +1,10 @@
 import React from 'react'
 import { Box, TableCell, TableHead, TableRow, TableSortLabel } from "@mui/material";
 import { visuallyHidden } from '@mui/utils';
-import { HeadCell, Order, SortableFields } from "../utils/types";
-import { COLOR } from "../theme";
-import SortIcon from "../icons/Sort";
-import SortArrowDownIcon from '../icons/SortArrowDown';
-import SortArrowUpIcon from '../icons/SortArrowUp';
+import { HeadCell, Order, SortableFields } from "../../utils/types";
+import { COLOR } from "../../theme";
+import { SortIcon, SortArrowDownIcon, SortArrowUpIcon } from "../../icons";
+
 
 interface TableHeadProps {
 	onRequestSort: (event: React.MouseEvent<unknown>, property: keyof SortableFields) => void;
@@ -51,7 +50,7 @@ const headCells: HeadCell[] = [
 	}
 ]
 
-export default function TableHeader(props: TableHeadProps) {
+export default function Header(props: TableHeadProps) {
 	const { order, orderBy, onRequestSort } =
 		props;
 	const createSortHandler =

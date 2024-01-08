@@ -1,10 +1,8 @@
-import { Box, Button, Checkbox, IconButton, InputBase, TextField, Typography } from '@mui/material'
+import { Box, Button, IconButton, InputBase, Typography } from '@mui/material'
 import React, { useState } from 'react'
-import SearchIcon from './icons/Search'
-import { COLOR } from './theme'
-
+import { SearchIcon, FilterIcon } from '../icons'
+import { COLOR } from '../theme'
 import { makeStyles } from 'tss-react/mui';
-import FilterIcon from './icons/Filter';
 
 type StyleProps = {}
 
