@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, TableCell, TableHead, TableRow, TableSortLabel } from "@mui/material";
 import { visuallyHidden } from '@mui/utils';
-import { HeadCell, Order, SortableFields } from "../../utils/types";
-import { COLOR } from "../../theme";
-import { SortIcon, SortArrowDownIcon, SortArrowUpIcon } from "../../icons";
+import { HeadCell, Order, SortableFields } from "@/utils/types";
+import { COLOR } from "@/theme";
+import { SortIcon, SortArrowDownIcon, SortArrowUpIcon } from "@/icons";
 
 
 interface TableHeadProps {

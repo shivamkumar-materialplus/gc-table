@@ -1,10 +1,10 @@
-import { IconButton, Stack, TableCell, TableRow, Typography } from "@mui/material";
 import React from "react";
-import { CheveronDownIcon, CheveronRightIcon } from "../../icons/";
+import { IconButton, Stack, TableCell, TableRow, Typography } from "@mui/material";
+import { CheveronDownIcon, CheveronRightIcon } from "@/icons";
+import { Data } from "@/utils/types";
+import { COLOR } from "@/theme";
+import { formatDate } from "@/utils/helpers";
 import ActionButtonMenu from "./ActionButtonMenu";
-import { Data } from "../../utils/types";
-import { COLOR } from "../../theme";
-import { formatDate } from "../../utils/helpers";
 
 type Props = {
 	row: Data;
