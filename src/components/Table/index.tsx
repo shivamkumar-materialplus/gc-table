@@ -3,11 +3,11 @@ import {
 	Pagination, PaginationItem, Paper, Table, TableBody, TableCell, TableContainer, TableRow
 } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import { COLOR } from '@/theme';
-import { Data, Order, SortableFields } from '@/utils/types';
-import { getComparator, stableSort } from '@/utils/helpers';
-import MenuBox from '@/components/MenuBox';
-import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '@/icons';
+import { COLOR } from '../../theme';
+import { Data, Order, SortableFields } from '../../utils/types';
+import { getComparator, stableSort } from '../../utils/helpers';
+import MenuBox from '../../components/MenuBox';
+import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';
 import Row from './Row';
 import TableHeader from './Header';
 
