@@ -1,8 +1,16 @@
+export type OrderStatus =
+  | "Order Downloaded"
+  | "Order Uploaded"
+  | "Order Shipped"
+  | "Due Date Negotiation"
+  | "Completed"
+  | string;
+
 export type Data = {
   order_id: number;
   created_by: string;
   assigned_lab: string;
-  order_status: string;
+  order_status: OrderStatus;
   created_date: string;
   delivery_date: string;
   patient_id: number;

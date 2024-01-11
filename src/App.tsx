@@ -4,32 +4,17 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 // import MyOldTable from './components/Table-old';
 import data1 from './data/MOCK_DATA.json'
-import data2 from './data/MOCK_DATA2.json'
-import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
 import MyTable from './components/Table';
 
 export default function App() {
-  const [data, setdata] = React.useState(data1)
   return (
     <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
         <Typography variant="h3" component="h1" gutterBottom>
           Orders
         </Typography>
-        <FormControl>
-          <RadioGroup
-            row
-            onChange={(e, value) => {
-              setdata(value === "1" ? data1 : data2);
-            }}
-            defaultValue="1"
-          >
-            <FormControlLabel value="1" control={<Radio />} label="Dataset 1" />
-            <FormControlLabel value="2" control={<Radio />} label="Dataset 2" />
-          </RadioGroup>
-        </FormControl>
         {/* <MyOldTable data={data} /> */}
-        <MyTable data={data} />
+        <MyTable data={data1} />
       </Box>
     </Container>
   );

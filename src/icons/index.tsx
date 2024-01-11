@@ -234,7 +234,7 @@ export function KebabThreeDotsIcon(props: Props) {
 		</svg >
 	)
 }
-export function PopperArrowIcon(props: Props) {
+export function PopperArrowUpIcon(props: Props) {
 	const { color, height, width } = props
 	return (
 		<svg
@@ -245,4 +245,20 @@ export function PopperArrowIcon(props: Props) {
 
 		</svg >
 	)
+}
+
+export function PopperArrowDownIcon(props: Props) {
+	const { color, height, width } = props;
+	return (
+		<svg
+			width={width || "10"}
+			height={height || "7"}
+			viewBox="0 0 10 7"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+			transform="rotate(180)"  // Add this line to rotate the icon 180 degrees
+		>
+			<path d="M5 0L9.33013 6.75H0.669873L5 0Z" fill={color || "#313434"} />
+		</svg>
+	);
 }

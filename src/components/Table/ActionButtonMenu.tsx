@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, ClickAwayListener, IconButton, Link, Paper, Popper, Stack, Typography } from "@mui/material";
-import { KebabThreeDotsIcon, LastIcon, PopperArrowIcon, SortArrowDownIcon } from '../../icons';
+import { Box, ClickAwayListener, IconButton, Link, Popper, Typography } from "@mui/material";
+import { KebabThreeDotsIcon, PopperArrowUpIcon } from '../../icons';
 import { Data } from '../../utils/types';
 import { COLOR } from '../../utils/constants';
 
@@ -70,7 +70,7 @@ const ActionButtonMenu = ({ order_id, action_allowed: actions }: ActionButtonsPr
 			>
 				<ClickAwayListener onClickAway={handleClose}>
 					<Box sx={{ border: 1, borderRadius: 1, padding: "5px 10px", display: 'flex', flexDirection: 'column', bgcolor: `${COLOR.WHITE}` }}>
-						<Box data-popper-arrow sx={{ marginTop: "-23px", cursor: 'pointer' }} onClick={handleClose}>{<PopperArrowIcon />}</Box>
+						<Box data-popper-arrow sx={{ marginTop: "-23px", cursor: 'pointer' }} onClick={handleClose}>{<PopperArrowUpIcon />}</Box>
 						<Link href="#" onClick={(e) => {
 							e.preventDefault();
 							console.log("order_id" + order_id)
