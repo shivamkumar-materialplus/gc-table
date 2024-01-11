@@ -2,10 +2,11 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import MyTable from './components/Table';
+// import MyOldTable from './components/Table-old';
 import data1 from './data/MOCK_DATA.json'
 import data2 from './data/MOCK_DATA2.json'
 import { FormControl, FormControlLabel, Radio, RadioGroup } from '@mui/material';
+import MyTable from './components/Table';
 
 export default function App() {
   const [data, setdata] = React.useState(data1)
@@ -27,6 +28,7 @@ export default function App() {
             <FormControlLabel value="2" control={<Radio />} label="Dataset 2" />
           </RadioGroup>
         </FormControl>
+        {/* <MyOldTable data={data} /> */}
         <MyTable data={data} />
       </Box>
     </Container>

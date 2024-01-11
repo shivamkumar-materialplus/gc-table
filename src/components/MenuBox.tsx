@@ -4,9 +4,8 @@ import { makeStyles } from 'tss-react/mui';
 import { SearchIcon, FilterIcon } from '../icons'
 import { COLOR } from '../theme'
 
-type StyleProps = {}
 
-const useStyles = makeStyles<StyleProps>()((defaultTheme, props) => {
+const useStyles = makeStyles()((_defaultTheme, _props) => {
 	return {
 		menuBox: {
 			display: 'flex',
@@ -78,7 +77,7 @@ type Props = {
 }
 
 function MenuBox({ handleToggleFilter, handleSearchChange }: Props) {
-	const { classes } = useStyles({});
+	const { classes } = useStyles();
 
 	return (
 		<Box className={classes.menuBox}>
