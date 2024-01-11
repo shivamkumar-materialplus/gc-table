@@ -6,7 +6,7 @@ import { makeStyles } from 'tss-react/mui';
 import { COLOR } from '../../utils/constants';
 import { Data, Order, SortableFields } from '../../utils/types-old';
 import { getComparator, stableSort } from '../../utils/helpers';
-import MenuBox from '../../components/MenuBox';
+import MenuBox from '../../components/MenuBox-old';
 import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';
 import Row from './Row';
 import TableHeader from './Header';

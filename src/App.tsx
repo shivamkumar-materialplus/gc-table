@@ -10,7 +10,7 @@ export default function App() {
   return (
     <Container maxWidth="lg">
       <Box sx={{ my: 4 }}>
-        <Typography variant="h3" component="h1" gutterBottom>
+        <Typography variant="h4" component="h1" gutterBottom>
           Orders
         </Typography>
         {/* <MyOldTable data={data} /> */}
