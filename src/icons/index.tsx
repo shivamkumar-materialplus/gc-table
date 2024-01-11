@@ -220,3 +220,29 @@ export function ViewIcon(props: Props) {
 		</svg>
 	)
 }
+
+export function KebabThreeDotsIcon(props: Props) {
+	const { color, height, width } = props
+	return (
+		<svg
+			width={width || "3"}
+			height={height || "14"}
+			viewBox="0 0 3 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M1.5 2.25C1.91421 2.25 2.25 1.91421 2.25 1.5C2.25 1.08579 1.91421 0.75 1.5 0.75C1.08579 0.75 0.75 1.08579 0.75 1.5C0.75 1.91421 1.08579 2.25 1.5 2.25Z" stroke={color || "black"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+			<path d="M1.5 7.75C1.91421 7.75 2.25 7.41421 2.25 7C2.25 6.58579 1.91421 6.25 1.5 6.25C1.08579 6.25 0.75 6.58579 0.75 7C0.75 7.41421 1.08579 7.75 1.5 7.75Z" stroke={color || "black"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+			<path d="M1.5 13.25C1.91421 13.25 2.25 12.9142 2.25 12.5C2.25 12.0858 1.91421 11.75 1.5 11.75C1.08579 11.75 0.75 12.0858 0.75 12.5C0.75 12.9142 1.08579 13.25 1.5 13.25Z" stroke={color || "black"} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+		</svg >
+	)
+}
+export function PopperArrowIcon(props: Props) {
+	const { color, height, width } = props
+	return (
+		<svg
+			width={width || "10"}
+			height={height || "7"}
+			viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M5 0L9.33013 6.75H0.669873L5 0Z" fill={color || "#313434"} />
+
+		</svg >
+	)
+}

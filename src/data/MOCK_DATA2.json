@@ -9,6 +9,7 @@
     "patient_id": 15613411,
     "patient_name": "Lisetta Scougal",
     "date_of_birth": "1993/06/29",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -22,6 +23,7 @@
     "patient_id": 27128534,
     "patient_name": "Matthias Poyzer",
     "date_of_birth": "1999/10/08",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -35,6 +37,7 @@
     "patient_id": 17323902,
     "patient_name": "Issie Gourdon",
     "date_of_birth": "1984/03/19",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": false, "delete": false }
   },
@@ -48,6 +51,7 @@
     "patient_id": 27864020,
     "patient_name": "Carry Trunchion",
     "date_of_birth": "1984/02/23",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -61,6 +65,7 @@
     "patient_id": 54097810,
     "patient_name": "Dede Wakes",
     "date_of_birth": "1991/11/06",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": true, "delete": true }
   },
@@ -74,6 +79,7 @@
     "patient_id": 71201211,
     "patient_name": "Klara Brimelow",
     "date_of_birth": "1997/05/20",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": false, "delete": true }
   },
@@ -87,6 +93,7 @@
     "patient_id": 19216770,
     "patient_name": "Vidovik Iwanicki",
     "date_of_birth": "1989/07/16",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": false, "delete": true }
   },
@@ -100,6 +107,7 @@
     "patient_id": 95510027,
     "patient_name": "Oliviero Hicklingbottom",
     "date_of_birth": "1987/04/24",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": true, "delete": true }
   },
@@ -113,6 +121,7 @@
     "patient_id": 55856517,
     "patient_name": "Conney Middleton",
     "date_of_birth": "1993/06/21",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -126,6 +135,7 @@
     "patient_id": 15889230,
     "patient_name": "Betteanne Hagard",
     "date_of_birth": "1985/02/09",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -139,6 +149,7 @@
     "patient_id": 68631702,
     "patient_name": "Dana Breede",
     "date_of_birth": "1984/11/09",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": false, "delete": false }
   },
@@ -152,6 +163,7 @@
     "patient_id": 37670285,
     "patient_name": "Valma Yurygyn",
     "date_of_birth": "1998/02/20",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -165,6 +177,7 @@
     "patient_id": 52536867,
     "patient_name": "Tanitansy Lindenberg",
     "date_of_birth": "1993/11/21",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -178,6 +191,7 @@
     "patient_id": 23663274,
     "patient_name": "Jaquenette Whitsey",
     "date_of_birth": "1997/11/29",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -191,6 +205,7 @@
     "patient_id": 77039347,
     "patient_name": "Vlad Kirk",
     "date_of_birth": "1997/06/12",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": false, "delete": true }
   },
@@ -204,6 +219,7 @@
     "patient_id": 46734042,
     "patient_name": "Miles Maffy",
     "date_of_birth": "1990/01/12",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": false, "delete": true }
   },
@@ -217,6 +233,7 @@
     "patient_id": 96048343,
     "patient_name": "Frederico Condliffe",
     "date_of_birth": "1991/06/05",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": false, "delete": true }
   },
@@ -230,6 +247,7 @@
     "patient_id": 40070862,
     "patient_name": "Judon Christaeas",
     "date_of_birth": "1997/06/25",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -243,6 +261,7 @@
     "patient_id": 93024511,
     "patient_name": "Milty Hounsham",
     "date_of_birth": "1985/11/03",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -256,6 +275,7 @@
     "patient_id": 79607207,
     "patient_name": "Timotheus Reen",
     "date_of_birth": "1995/02/18",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": false, "delete": true }
   },
@@ -269,6 +289,7 @@
     "patient_id": 38676992,
     "patient_name": "Stafani Tolomio",
     "date_of_birth": "1985/07/13",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -282,6 +303,7 @@
     "patient_id": 93121403,
     "patient_name": "Wilone Coggon",
     "date_of_birth": "1984/04/15",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": false, "delete": false }
   },
@@ -295,6 +317,7 @@
     "patient_id": 55548481,
     "patient_name": "Caesar Barnewelle",
     "date_of_birth": "1988/02/28",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -308,6 +331,7 @@
     "patient_id": 15453313,
     "patient_name": "Morgen Boxall",
     "date_of_birth": "1995/04/05",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -321,6 +345,7 @@
     "patient_id": 67292461,
     "patient_name": "Roderigo Ondracek",
     "date_of_birth": "1990/06/25",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": true, "delete": true }
   },
@@ -334,6 +359,7 @@
     "patient_id": 87305339,
     "patient_name": "Stanleigh Croshaw",
     "date_of_birth": "1984/11/29",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": false, "delete": true }
   },
@@ -347,6 +373,7 @@
     "patient_id": 63339706,
     "patient_name": "Jsandye Rassell",
     "date_of_birth": "1990/09/27",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -360,6 +387,7 @@
     "patient_id": 20238647,
     "patient_name": "Murvyn Cavolini",
     "date_of_birth": "1994/03/04",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": true, "delete": true }
   },
@@ -373,6 +401,7 @@
     "patient_id": 98743520,
     "patient_name": "Donelle Grzeszczyk",
     "date_of_birth": "1983/11/30",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -386,6 +415,7 @@
     "patient_id": 47896553,
     "patient_name": "Yvonne Breach",
     "date_of_birth": "1990/01/14",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": true, "delete": false }
   },
@@ -399,6 +429,7 @@
     "patient_id": 68015062,
     "patient_name": "Harriott Sturdy",
     "date_of_birth": "1983/05/27",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -412,6 +443,7 @@
     "patient_id": 15881325,
     "patient_name": "Genna Woollacott",
     "date_of_birth": "1986/12/04",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -425,6 +457,7 @@
     "patient_id": 73912890,
     "patient_name": "Shaun Manser",
     "date_of_birth": "1992/08/21",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": false, "delete": true }
   },
@@ -438,6 +471,7 @@
     "patient_id": 12094818,
     "patient_name": "Nicolis Di Iorio",
     "date_of_birth": "1989/08/15",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -451,6 +485,7 @@
     "patient_id": 76499407,
     "patient_name": "Yvonne Van den Velde",
     "date_of_birth": "1995/07/24",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": false, "delete": false }
   },
@@ -464,6 +499,7 @@
     "patient_id": 22427230,
     "patient_name": "Arly Brindle",
     "date_of_birth": "1995/06/17",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -477,6 +513,7 @@
     "patient_id": 90988100,
     "patient_name": "Rosalind Goldstone",
     "date_of_birth": "1987/04/05",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -490,6 +527,7 @@
     "patient_id": 70321980,
     "patient_name": "Saraann Temporal",
     "date_of_birth": "1987/07/14",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": true, "delete": false }
   },
@@ -503,6 +541,7 @@
     "patient_id": 29902171,
     "patient_name": "Almeta Reveley",
     "date_of_birth": "1997/11/23",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": true, "delete": true }
   },
@@ -516,6 +555,7 @@
     "patient_id": 31963687,
     "patient_name": "Cathyleen Bodechon",
     "date_of_birth": "1999/04/19",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": false, "delete": true }
   },
@@ -529,6 +569,7 @@
     "patient_id": 94512468,
     "patient_name": "Rickey Shakesbye",
     "date_of_birth": "1996/11/15",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": false, "view": false, "delete": true }
   },
@@ -542,6 +583,7 @@
     "patient_id": 71768017,
     "patient_name": "Dorella Barzen",
     "date_of_birth": "1989/09/22",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": true, "delete": false }
   },
@@ -555,6 +597,7 @@
     "patient_id": 13565494,
     "patient_name": "Thane Habbeshaw",
     "date_of_birth": "1993/12/24",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": false, "view": true, "delete": false }
   },
@@ -568,6 +611,7 @@
     "patient_id": 64523333,
     "patient_name": "Evvie Filyaev",
     "date_of_birth": "1993/05/08",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   },
@@ -581,6 +625,7 @@
     "patient_id": 73136462,
     "patient_name": "Saraann Bottrell",
     "date_of_birth": "1986/07/03",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments",
     "action_allowed": { "edit": true, "view": false, "delete": false }
   },
@@ -594,6 +639,7 @@
     "patient_id": 84612118,
     "patient_name": "Thorny Jerratsch",
     "date_of_birth": "1986/09/29",
+    "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
     "action_allowed": { "edit": true, "view": true, "delete": true }
   }

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Box, IconButton, Stack, Typography } from "@mui/material";
-import { EditIcon, ViewIcon, ThreeDotsIcon } from '../../icons';
+import { Box, ClickAwayListener, IconButton, Link, Paper, Popper, Stack, Typography } from "@mui/material";
+import { KebabThreeDotsIcon, LastIcon, PopperArrowIcon, SortArrowDownIcon } from '../../icons';
 import { Data } from '../../utils/types';
-import { COLOR } from '../../theme';
+import { COLOR } from '../../utils/constants';
 
 type IconLabelProps = {
 	icon: React.JSX.Element;
@@ -34,24 +34,60 @@ const IconLabelButton = ({ icon, label, disabled, onClick }: IconLabelProps) => 
 type ActionButtonsProps = Pick<Data, "order_id" | "action_allowed">
 
 const ActionButtonMenu = ({ order_id, action_allowed: actions }: ActionButtonsProps) => {
+	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+	const open = Boolean(anchorEl);
+	const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+		setAnchorEl(anchorEl ? null : event.currentTarget);
+	};
+
+	const id = open ? 'action-menu' : undefined;
+
+	const handleClose = () => {
+		setAnchorEl(null);
+	};
+
 	return (
-		<Stack direction="row" spacing={1}>
-			<IconLabelButton icon={<EditIcon height={12} color={!actions.edit ? COLOR.DISABLED_GRAY : ""} />}
-				label={"Edit"}
-				disabled={!actions.edit}
-				onClick={() => console.log("Editing " + order_id)}
-			/>
-			<IconLabelButton icon={<ViewIcon height={12} color={!actions.view ? COLOR.DISABLED_GRAY : ""} />}
-				label={"View"}
-				disabled={!actions.view}
-				onClick={() => console.log("Viewing " + order_id)}
-			/>
-			<IconLabelButton icon={<ThreeDotsIcon color={!actions.delete ? COLOR.DISABLED_GRAY : ""} />}
-				label={"More"}
-				disabled={!actions.delete}
-				onClick={() => console.log("Deleting" + order_id)}
-			/>
-		</Stack>
+		<>
+			<IconButton
+				onClick={handleClick}
+				aria-describedby={id}
+			>
+				<KebabThreeDotsIcon />
+			</IconButton>
+			<Popper
+				id={id}
+				open={open}
+				anchorEl={anchorEl}
+				placement="bottom-end"
+				modifiers={[
+					{
+						name: 'offset',
+						options: {
+							offset: [23, 0],
+						},
+					},
+				]}
+			>
+				<ClickAwayListener onClickAway={handleClose}>
+					<Box sx={{ border: 1, borderRadius: 1, padding: "5px 10px", display: 'flex', flexDirection: 'column', bgcolor: `${COLOR.WHITE}` }}>
+						<Box data-popper-arrow sx={{ marginTop: "-23px", cursor: 'pointer' }} onClick={handleClose}>{<PopperArrowIcon />}</Box>
+						<Link href="#" onClick={(e) => {
+							e.preventDefault();
+							console.log("order_id" + order_id)
+						}}>View Details</Link>
+						<Link href="#" onClick={(e) => {
+							e.preventDefault();
+							console.log("order_id" + order_id)
+						}}>Download Files</Link>
+						<Link href="#" onClick={(e) => {
+							e.preventDefault();
+							console.log("order_id" + order_id)
+						}}>Download Form</Link>
+					</Box>
+
+				</ClickAwayListener>
+			</Popper>
+		</>
 	)
 }
 

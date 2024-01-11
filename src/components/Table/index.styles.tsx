@@ -1,26 +1,26 @@
 import { makeStyles } from 'tss-react/mui';
-import { COLOR } from '../../theme';
+import { COLOR } from '../../utils/constants';
 
 export const useStyles = makeStyles()((_defaultTheme, _props) => {
     return {
         dataTable: {
-            '& table, th, td': {
-                border: `solid 1px ${COLOR.LIGHT_GRAY}`,
-                borderCollapse: 'collapse'
+            borderRadius: `30px 30px 0px 0px`,
+            '& tr td:first-of-type': {
+                paddingLeft: '21px'
             },
-            '& th': {
-                padding: `10px`
+            '& tr th:first-of-type': {
+                paddingLeft: '11px'
             }
         },
         tableBody: {
             '& td': {
-                padding: "10px 5px 5px 10px",
+                padding: "10px 5px 5px 15px",
             }
         },
         pagination: {
             display: 'flex',
             justifyContent: 'center',
-            marginTop: '20px',
+            marginTop: '11px',
             '& button': {
                 borderRadius: "6px",
                 backgroundColor: COLOR.LIGHT_GREEN,
@@ -29,6 +29,7 @@ export const useStyles = makeStyles()((_defaultTheme, _props) => {
                 lineHeight: "26px",
                 fontWeight: "600",
             },
+            paddingBottom: "18px",
         },
         paginationItem: {
             borderRadius: "8px",

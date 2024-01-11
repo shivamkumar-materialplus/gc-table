@@ -71,6 +71,10 @@ export default function MyTable({ data }: Props) {
 		setOrderBy(property);
 	};
 
+	const handleRequestSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
+		console.log('searching')
+	}
+
 	const handleChangePage = (event: unknown, newPage: number) => {
 		setPage(newPage);
 		setExpandedRow(expandedRow); //Set it to null If you want it to collapse on page change
@@ -79,7 +83,7 @@ export default function MyTable({ data }: Props) {
 	return (
 		<>
 			<MenuBox handleToggleFilter={handleToggleFilter} handleSearchChange={handleSearchChange} />
-			<Paper elevation={3} sx={{ padding: 2, borderRadius: '30px' }}>
+			<Paper elevation={3} sx={{ borderRadius: '30px' }}>
 				<TableContainer className={classes.dataTable}>
 					<Table stickyHeader>
 						{/* Table Header */}
@@ -87,6 +91,7 @@ export default function MyTable({ data }: Props) {
 							order={order}
 							orderBy={orderBy}
 							onRequestSort={handleRequestSort}
+							onRequestSearch={handleRequestSearch}
 						/>
 						{/* Table Body */}
 						<TableBody className={classes.tableBody}>

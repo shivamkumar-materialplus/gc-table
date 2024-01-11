@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Box, Button, IconButton, InputBase, Typography } from '@mui/material'
 import { makeStyles } from 'tss-react/mui';
 import { SearchIcon, FilterIcon } from '../icons'
-import { COLOR } from '../theme'
+import { COLOR } from '../utils/constants';
 
 
 const useStyles = makeStyles()((_defaultTheme, _props) => {

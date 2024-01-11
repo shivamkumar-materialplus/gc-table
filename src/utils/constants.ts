@@ -5,5 +5,7 @@ export const COLOR = {
   LIGHT_GREEN: "#E1F0ED",
   NEAR_WHITE: "#F3F3F3",
   DISABLED_GRAY: "#d6d6d6",
+  GRAY_4: "#A6A6A6",
   GRAY_5: "#F2F2F2",
+  WHITE: "#FFFFFF",
 };

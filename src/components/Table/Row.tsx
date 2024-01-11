@@ -1,8 +1,7 @@
 import React from "react";
-import { IconButton, Stack, TableCell, TableRow, Typography } from "@mui/material";
-import { CheveronDownIcon, CheveronRightIcon } from "../../icons";
+import { Link, Stack, TableCell, TableRow, Typography } from "@mui/material";
 import { Data } from "../../utils/types";
-import { COLOR } from "../../theme";
+import { COLOR } from "../../utils/constants";
 import { formatDate } from "../../utils/helpers";
 import ActionButtonMenu from "./ActionButtonMenu";
 
@@ -26,49 +25,17 @@ export default function Row(props: Props) {
 					verticalAlign: 'baseline',
 				} : {},
 			}} hover tabIndex={-1}>
-				<TableCell sx={{}}>
-					<IconButton
-						size="small"
-						onClick={() => {
-							setExpandedRow(open ? null : row.order_id)
-						}}
-					>
-						{open ? <CheveronDownIcon /> : <CheveronRightIcon />}
-					</IconButton>
+				<TableCell>
+					<Link href="#">{row.order_id}</Link>
 				</TableCell>
-				<TableCell>{open
-					? <Stack direction={"column"} gap={2}>
-						<InfoBox label="Order Id" value={row.order_id} />
-						<InfoBox label="Patient Id" value={row.patient_id} />
-					</Stack>
-					: row.order_id}
-				</TableCell>
-				<TableCell>{open
-					? <Stack direction={"column"} gap={2}>
-						<InfoBox label="Created By" value={row.created_by} />
-						<InfoBox label="Patient Name" value={row.patient_name} />
-					</Stack>
-					: row.created_by}</TableCell>
-				<TableCell>{open
-					? <Stack direction={"column"} gap={2}>
-						<InfoBox label="Assigned Lab" value={row.assigned_lab} />
-						<InfoBox label="Date of Birth" value={row.date_of_birth} />
-					</Stack>
-					: row.assigned_lab}
-				</TableCell>
-				<TableCell sx={{ width: '205px' }}>{open
-					? <Stack direction={"column"} gap={2}>
-						<InfoBox label="Order Status" value={row.order_status} />
-						<InfoBox label="Lab Information" value={row.lab_information} />
-					</Stack>
-					: row.order_status}</TableCell>
-				<TableCell>{open
-					? <InfoBox label="Created Date" value={formatDate(row.created_date)} />
-					: formatDate(row.created_date)}</TableCell>
-				<TableCell>{open
-					? <InfoBox label="Delivery Date" value={formatDate(row.delivery_date)} />
-					: formatDate(row.delivery_date)}</TableCell>
-				<TableCell>{
+				<TableCell>{row.patient_name}</TableCell>
+				<TableCell>{row.created_by}</TableCell>
+				<TableCell>{row.assigned_lab}</TableCell>
+				<TableCell>{row.order_status}</TableCell>
+				<TableCell>{row.restoration_type}</TableCell>
+				<TableCell>{formatDate(row.created_date)}</TableCell>
+				<TableCell>{formatDate(row.delivery_date)}</TableCell>
+				<TableCell align="center">{
 					<>
 						{open && <InfoBox label="Actions" />}
 						<ActionButtonMenu order_id={row.order_id} action_allowed={row.action_allowed} />
