@@ -11,12 +11,7 @@
     "date_of_birth": "1993/06/29",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 6959446525,
@@ -30,12 +25,7 @@
     "date_of_birth": "1999/10/08",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 2846692228,
@@ -49,16 +39,7 @@
     "date_of_birth": "1984/03/19",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": false, "delete": false }
   },
   {
     "order_id": 1340265534,
@@ -72,12 +53,7 @@
     "date_of_birth": "1984/02/23",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 8878117399,
@@ -91,16 +67,7 @@
     "date_of_birth": "1991/11/06",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": true, "delete": true }
   },
   {
     "order_id": 1957087166,
@@ -114,12 +81,7 @@
     "date_of_birth": "1997/05/20",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 5487415064,
@@ -133,16 +95,7 @@
     "date_of_birth": "1989/07/16",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 9157454653,
@@ -156,12 +109,7 @@
     "date_of_birth": "1987/04/24",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Completed"]
+    "action_allowed": { "edit": false, "view": true, "delete": true }
   },
   {
     "order_id": 5236410328,
@@ -175,12 +123,7 @@
     "date_of_birth": "1993/06/21",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 3406982220,
@@ -194,16 +137,7 @@
     "date_of_birth": "1985/02/09",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 2128855162,
@@ -217,12 +151,7 @@
     "date_of_birth": "1984/11/09",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Completed"]
+    "action_allowed": { "edit": false, "view": false, "delete": false }
   },
   {
     "order_id": 3702848337,
@@ -236,12 +165,7 @@
     "date_of_birth": "1998/02/20",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 6837558330,
@@ -255,16 +179,7 @@
     "date_of_birth": "1993/11/21",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 3711055548,
@@ -278,12 +193,7 @@
     "date_of_birth": "1997/11/29",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 2015398365,
@@ -297,12 +207,7 @@
     "date_of_birth": "1997/06/12",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 7207150110,
@@ -316,12 +221,7 @@
     "date_of_birth": "1990/01/12",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 8523169058,
@@ -335,12 +235,7 @@
     "date_of_birth": "1991/06/05",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 9436146302,
@@ -354,12 +249,7 @@
     "date_of_birth": "1997/06/25",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 2188534347,
@@ -373,12 +263,7 @@
     "date_of_birth": "1985/11/03",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 9575661866,
@@ -392,12 +277,7 @@
     "date_of_birth": "1995/02/18",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 5236719871,
@@ -411,12 +291,7 @@
     "date_of_birth": "1985/07/13",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 3152799199,
@@ -430,16 +305,7 @@
     "date_of_birth": "1984/04/15",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": false, "delete": false }
   },
   {
     "order_id": 7962724141,
@@ -453,12 +319,7 @@
     "date_of_birth": "1988/02/28",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 8191526368,
@@ -472,12 +333,7 @@
     "date_of_birth": "1995/04/05",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 4075386834,
@@ -491,12 +347,7 @@
     "date_of_birth": "1990/06/25",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": false, "view": true, "delete": true }
   },
   {
     "order_id": 8522554330,
@@ -510,12 +361,7 @@
     "date_of_birth": "1984/11/29",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 1903605738,
@@ -529,12 +375,7 @@
     "date_of_birth": "1990/09/27",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 6150672541,
@@ -548,16 +389,7 @@
     "date_of_birth": "1994/03/04",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": true, "delete": true }
   },
   {
     "order_id": 3154535257,
@@ -571,12 +403,7 @@
     "date_of_birth": "1983/11/30",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 7175007706,
@@ -590,16 +417,7 @@
     "date_of_birth": "1990/01/14",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": true, "delete": false }
   },
   {
     "order_id": 7075218735,
@@ -613,16 +431,7 @@
     "date_of_birth": "1983/05/27",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 3764988057,
@@ -636,12 +445,7 @@
     "date_of_birth": "1986/12/04",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 8388497892,
@@ -655,16 +459,7 @@
     "date_of_birth": "1992/08/21",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 6275313713,
@@ -678,12 +473,7 @@
     "date_of_birth": "1989/08/15",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 7474742220,
@@ -697,12 +487,7 @@
     "date_of_birth": "1995/07/24",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": false, "view": false, "delete": false }
   },
   {
     "order_id": 7820005760,
@@ -716,12 +501,7 @@
     "date_of_birth": "1995/06/17",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 6075295569,
@@ -735,12 +515,7 @@
     "date_of_birth": "1987/04/05",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 9110746867,
@@ -754,12 +529,7 @@
     "date_of_birth": "1987/07/14",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": false }
   },
   {
     "order_id": 5709115731,
@@ -773,12 +543,7 @@
     "date_of_birth": "1997/11/23",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": false, "view": true, "delete": true }
   },
   {
     "order_id": 4837703074,
@@ -792,12 +557,7 @@
     "date_of_birth": "1999/04/19",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 3317336582,
@@ -811,12 +571,7 @@
     "date_of_birth": "1996/11/15",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 7091418066,
@@ -830,12 +585,7 @@
     "date_of_birth": "1989/09/22",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": false, "view": true, "delete": false }
   },
   {
     "order_id": 7212616140,
@@ -849,12 +599,7 @@
     "date_of_birth": "1993/12/24",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": false, "view": true, "delete": false }
   },
   {
     "order_id": 7424314417,
@@ -868,12 +613,7 @@
     "date_of_birth": "1993/05/08",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 7845980147,
@@ -887,12 +627,7 @@
     "date_of_birth": "1986/07/03",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 3843659845,
@@ -906,12 +641,7 @@
     "date_of_birth": "1986/09/29",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": true,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Completed"]
+    "action_allowed": { "edit": true, "view": true, "delete": true }
   },
   {
     "order_id": 4806847648,
@@ -925,16 +655,7 @@
     "date_of_birth": "1988/12/26",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": false, "delete": false }
   },
   {
     "order_id": 6181142042,
@@ -948,12 +669,7 @@
     "date_of_birth": "1997/01/20",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 4335598789,
@@ -967,16 +683,7 @@
     "date_of_birth": "1984/12/26",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 5491245691,
@@ -990,16 +697,7 @@
     "date_of_birth": "1992/08/21",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": [
-      "Order Uploaded",
-      "Due Date Negotiation",
-      "Order Rejected"
-    ]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 4880734130,
@@ -1013,12 +711,7 @@
     "date_of_birth": "1991/04/19",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Downloaded", "Order Rejected"]
+    "action_allowed": { "edit": true, "view": false, "delete": false }
   },
   {
     "order_id": 8479389401,
@@ -1032,12 +725,7 @@
     "date_of_birth": "1983/08/30",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": false, "view": false, "delete": false }
   },
   {
     "order_id": 5026585754,
@@ -1051,12 +739,7 @@
     "date_of_birth": "1987/05/18",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 2, abc apartments, building 6, Tokyo-123 Contact Number : +81-98112256",
-    "action_allowed": {
-      "edit": false,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
+    "action_allowed": { "edit": false, "view": false, "delete": true }
   },
   {
     "order_id": 7088828689,
@@ -1070,12 +753,7 @@
     "date_of_birth": "1989/10/16",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": true,
-      "view": false,
-      "delete": true
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Completed"]
+    "action_allowed": { "edit": true, "view": false, "delete": true }
   },
   {
     "order_id": 1500125332,
@@ -1089,11 +767,6 @@
     "date_of_birth": "1988/06/22",
     "restoration_type": "Inlay, Onlay, Crown",
     "lab_information": "Lab 1, abc apartments, building 4, Tokyo-12345 Contact Number : +81-9811223344",
-    "action_allowed": {
-      "edit": false,
-      "view": true,
-      "delete": false
-    },
-    "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
+    "action_allowed": { "edit": false, "view": true, "delete": false }
   }
 ]

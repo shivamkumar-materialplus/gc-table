@@ -11,4 +11,5 @@ export const COLOR = {
   SKY_BLUE: "#AAE8F6",
   YELLOW_ORANGE: "#FFCA7A",
   PALE_GREEN: "#C9F289",
+  REDDISH: "#FFA683",
 };

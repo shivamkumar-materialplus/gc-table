@@ -4,6 +4,7 @@ export type OrderStatus =
   | "Order Shipped"
   | "Due Date Negotiation"
   | "Completed"
+  | "Order Rejected"
   | string;
 
 export type Data = {
@@ -23,11 +24,13 @@ export type Data = {
     view: boolean;
     delete: boolean;
   };
+  order_journey: OrderStatus[];
 };
 
 export type Order = "asc" | "desc";
 
-export type SortableFields = Omit<Data, "action_allowed">;
+type temp = Omit<Data, "action_allowed">;
+export type SortableFields = Omit<temp, "order_journey">;
 
 export type HeadCell = {
   id: keyof Data;

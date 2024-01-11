@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, ClickAwayListener, Link, Paper, Popper, Stack, TableCell, TableRow, Typography } from "@mui/material";
+import { Box, ClickAwayListener, Link, Paper, Popper, TableCell, TableRow } from "@mui/material";
 import { Data, OrderStatus } from "../../utils/types";
 import { COLOR } from "../../utils/constants";
 import { formatDate } from "../../utils/helpers";
@@ -22,6 +22,9 @@ const getColor = (status: OrderStatus): string => {
 			break;
 		case "Order Uploaded":
 			color = COLOR.YELLOW_ORANGE
+			break;
+		case "Order Rejected":
+			color = COLOR.REDDISH
 			break;
 		case "Completed":
 			color = COLOR.PALE_GREEN
@@ -98,7 +101,7 @@ export default function Row(props: Props) {
 									backgroundColor: COLOR.LIGHT_GREEN
 								}}>
 									{/* @TODO: update order_journey as per actual data. */}
-									<OrderJourneyPopper order_journey={["Order Uploaded", "Order Shipped", "Completed"]} />
+									<OrderJourneyPopper order_journey={row.order_journey} />
 								</Box>
 							</Paper>
 						</ClickAwayListener>
