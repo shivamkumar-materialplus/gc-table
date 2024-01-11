@@ -1,4 +1,5 @@
-import { Order } from "./types";
+import { COLOR } from "./constants";
+import { Order, OrderStatus } from "./types";
 
 // import { Order } from "./types-old";
 
@@ -64,3 +65,23 @@ export function formatDate(dateString: string): string {
 
   return dateString;
 }
+
+export const getColor = (status: OrderStatus): string => {
+  let color = COLOR.LIGHT_GRAY;
+  switch (status) {
+    case "Order Downloaded":
+    case "Due Date Negotiation":
+    case "Order Shipped":
+      color = COLOR.SKY_BLUE;
+      break;
+    case "Order Uploaded":
+      color = COLOR.YELLOW_ORANGE;
+      break;
+    case "Order Rejected":
+      color = COLOR.REDDISH;
+      break;
+    case "Completed":
+      color = COLOR.PALE_GREEN;
+  }
+  return color;
+};

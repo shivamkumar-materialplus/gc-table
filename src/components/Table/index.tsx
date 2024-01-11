@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react'
+import React, { useState, useMemo } from 'react'
 import {
 	Pagination, PaginationItem, Paper, Table, TableBody, TableCell, TableContainer, TableRow
 } from '@mui/material';
@@ -10,6 +10,7 @@ import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';
 import Row from './Row';
 import TableHeader from './Header';
 import { useStyles } from './index.styles';
+import { COLOR } from '../../utils/constants';
 
 type Props = {
 	data: Data[]
@@ -21,7 +22,6 @@ export default function MyTable({ data }: Props) {
 	const [order, setOrder] = useState<Order>('asc');
 	const [orderBy, setOrderBy] = useState<keyof SortableFields>('order_id');
 	const [page, setPage] = useState(1);
-	const [expandedRow, setExpandedRow] = useState<number | null>(null);
 
 	const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setSearchText((event.target).value);
@@ -57,11 +57,6 @@ export default function MyTable({ data }: Props) {
 		[order, orderBy, page, rowsPerPage, showCompleted, searchText, data],
 	);
 
-	// If dataset is changed, resetting the page number
-	useEffect(() => {
-		setPage(1);
-	}, [data])
-
 	const handleRequestSort = (
 		event: React.MouseEvent<unknown>,
 		property: keyof SortableFields,
@@ -77,7 +72,6 @@ export default function MyTable({ data }: Props) {
 
 	const handleChangePage = (event: unknown, newPage: number) => {
 		setPage(newPage);
-		setExpandedRow(expandedRow); //Set it to null If you want it to collapse on page change
 	};
 
 	return (
@@ -86,21 +80,15 @@ export default function MyTable({ data }: Props) {
 			<Paper elevation={3} sx={{ borderRadius: '30px' }}>
 				<TableContainer className={classes.dataTable}>
 					<Table stickyHeader>
-						{/* Table Header */}
 						<TableHeader
 							order={order}
 							orderBy={orderBy}
 							onRequestSort={handleRequestSort}
 							onRequestSearch={handleRequestSearch}
 						/>
-						{/* Table Body */}
 						<TableBody className={classes.tableBody}>
 							{visibleRows.map((row) =>
-								<Row
-									row={row}
-									setExpandedRow={setExpandedRow}
-									expandedRow={expandedRow}
-								/>)}
+								<Row row={row} />)}
 							{emptyRows > 0 && (
 								<TableRow
 									style={{
@@ -116,7 +104,6 @@ export default function MyTable({ data }: Props) {
 					</Table>
 				</TableContainer>
 
-				{/* For more customisation utilize usePagination hook */}
 				<Pagination
 					count={Math.ceil(rows.length / rowsPerPage)}
 					onChange={handleChangePage}
@@ -126,10 +113,10 @@ export default function MyTable({ data }: Props) {
 					color="primary"
 					renderItem={(item) => <PaginationItem
 						slots={{
-							first: () => <FirstIcon color={item.disabled ? 'white' : ""} />,
-							previous: () => <PreviousIcon color={item.disabled ? 'white' : ""} />,
-							next: () => <NextIcon color={item.disabled ? 'white' : ""} />,
-							last: () => <LastIcon color={item.disabled ? 'white' : ""} />
+							first: () => <FirstIcon color={item.disabled ? COLOR.WHITE : ""} />,
+							previous: () => <PreviousIcon color={item.disabled ? COLOR.WHITE : ""} />,
+							next: () => <NextIcon color={item.disabled ? COLOR.WHITE : ""} />,
+							last: () => <LastIcon color={item.disabled ? COLOR.WHITE : ""} />
 						}}
 						{...item}
 						className={classes.paginationItem} />}
