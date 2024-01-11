@@ -4,7 +4,7 @@ import {
 } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 import { COLOR } from '../../theme';
-import { Data, Order, SortableFields } from '../../utils/types';
+import { Data, Order, SortableFields } from '../../utils/types-old';
 import { getComparator, stableSort } from '../../utils/helpers';
 import MenuBox from '../../components/MenuBox';
 import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';

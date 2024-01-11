@@ -1,7 +1,7 @@
 import React from "react";
 import { IconButton, Stack, TableCell, TableRow, Typography } from "@mui/material";
 import { CheveronDownIcon, CheveronRightIcon } from "../../icons";
-import { Data } from "../../utils/types";
+import { Data } from "../../utils/types-old";
 import { COLOR } from "../../theme";
 import { formatDate } from "../../utils/helpers";
 import ActionButtonMenu from "./ActionButtonMenu";

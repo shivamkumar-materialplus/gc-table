@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { EditIcon, ViewIcon, ThreeDotsIcon } from '../../icons';
-import { Data } from '../../utils/types';
+import { Data } from '../../utils/types-old';
 import { COLOR } from '../../theme';
 
 type IconLabelProps = {

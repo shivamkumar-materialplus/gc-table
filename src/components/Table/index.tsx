@@ -2,53 +2,19 @@ import React, { useState, useMemo, useEffect } from 'react'
 import {
 	Pagination, PaginationItem, Paper, Table, TableBody, TableCell, TableContainer, TableRow
 } from '@mui/material';
-import { makeStyles } from 'tss-react/mui';
-import { COLOR } from '../../theme';
+
 import { Data, Order, SortableFields } from '../../utils/types';
 import { getComparator, stableSort } from '../../utils/helpers';
 import MenuBox from '../../components/MenuBox';
 import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';
 import Row from './Row';
 import TableHeader from './Header';
-
-const useStyles = makeStyles()((_defaultTheme, _props) => {
-	return {
-		dataTable: {
-			'& table, th, td': {
-				border: `solid 1px ${COLOR.LIGHT_GRAY}`,
-				borderCollapse: 'collapse'
-			},
-			'& th': {
-				padding: `10px`
-			}
-		},
-		tableBody: {
-			'& td': {
-				padding: "10px 5px 5px 10px",
-			}
-		},
-		pagination: {
-			display: 'flex',
-			justifyContent: 'center',
-			marginTop: '20px',
-			'& button': {
-				borderRadius: "6px",
-				backgroundColor: COLOR.LIGHT_GREEN,
-				color: COLOR.GC_GREEN_AA,
-				fontSize: "16px",
-				lineHeight: "26px",
-				fontWeight: "600",
-			},
-		},
-		paginationItem: {
-			borderRadius: "8px",
-		}
-	}
-})
+import { useStyles } from './index.styles';
 
 type Props = {
 	data: Data[]
 }
+
 export default function MyTable({ data }: Props) {
 	const [showCompleted, setShowCompleted] = useState(true);
 	const [searchText, setSearchText] = useState('');
