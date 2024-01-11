@@ -3,7 +3,7 @@ import {
 	Pagination, PaginationItem, Paper, Table, TableBody, TableCell, TableContainer, TableRow
 } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
-import { COLOR } from '../../theme';
+import { COLOR } from '../../utils/constants';
 import { Data, Order, SortableFields } from '../../utils/types-old';
 import { getComparator, stableSort } from '../../utils/helpers';
 import MenuBox from '../../components/MenuBox';

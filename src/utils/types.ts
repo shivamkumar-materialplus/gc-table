@@ -9,6 +9,7 @@ export type Data = {
   patient_name: string;
   date_of_birth: string;
   lab_information: string;
+  restoration_type: string;
   action_allowed: {
     edit: boolean;
     view: boolean;
@@ -24,4 +25,5 @@ export type HeadCell = {
   id: keyof Data;
   label: string;
   sortable?: boolean;
+  searchable?: boolean;
 };

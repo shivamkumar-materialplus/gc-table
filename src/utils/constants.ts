@@ -1,0 +1,9 @@
+export const COLOR = {
+  DARK_GRAY: "#313434",
+  GC_GREEN_AA: "#14856B",
+  LIGHT_GRAY: "#CCCCCC",
+  LIGHT_GREEN: "#E1F0ED",
+  NEAR_WHITE: "#F3F3F3",
+  DISABLED_GRAY: "#d6d6d6",
+  GRAY_5: "#F2F2F2",
+};

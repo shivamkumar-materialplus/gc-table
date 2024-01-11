@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, IconButton, Stack, Typography } from "@mui/material";
 import { EditIcon, ViewIcon, ThreeDotsIcon } from '../../icons';
 import { Data } from '../../utils/types-old';
-import { COLOR } from '../../theme';
+import { COLOR } from '../../utils/constants';
 
 type IconLabelProps = {
 	icon: React.JSX.Element;
