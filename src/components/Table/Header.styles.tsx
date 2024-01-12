@@ -6,14 +6,12 @@ export const useStyles = makeStyles()((_defaultTheme, _props) => {
     tableHeader: {
       '& tr:first-of-type th': {
         verticalAlign: 'baseline',
-        padding: `15px 5px 10px 5px`,
         backgroundColor: 'unset',
       },
       '& th:last-of-type p': {
         paddingRight: '34px',
       },
       '& tr:nth-of-type(2) th': {
-        padding: '6px 5px',
         backgroundColor: 'unset',
       }
     },

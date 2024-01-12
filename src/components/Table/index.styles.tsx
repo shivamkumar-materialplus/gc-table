@@ -5,16 +5,10 @@ export const useStyles = makeStyles()((_defaultTheme, _props) => {
   return {
     dataTable: {
       borderRadius: `30px 30px 0px 0px`,
-      '& tr td:first-of-type': {
-        paddingLeft: '21px'
-      },
-      '& tr th:first-of-type': {
-        paddingLeft: '11px'
-      }
     },
     tableBody: {
       '& td': {
-        padding: "10px 5px 5px 15px",
+        padding: "8px 10px 8px 10px",
       }
     },
     pagination: {

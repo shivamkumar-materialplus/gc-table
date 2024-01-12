@@ -14,6 +14,15 @@ const theme = createTheme({
       main: red.A400,
     },
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 375,
+      md: 720,
+      lg: 1228,
+      xl: 1920,
+    },
+  },
 });
 
 export default theme;

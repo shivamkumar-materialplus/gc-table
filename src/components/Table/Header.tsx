@@ -38,21 +38,23 @@ export default function Header(props: TableHeadProps) {
   return (
     <TableHead className={classes.tableHeader}>
       <TableRow className={classes.titleRow}>
-        {headCells.map((headCell) => (
-          <>
-            <TableCell
-              key={headCell.id}
-              sortDirection={orderBy === headCell.id ? order : false}
-            >
-              <Typography variant='body2' sx={{ fontWeight: '600', paddingLeft: '10px' }}>{headCell.label}</Typography>
-            </TableCell>
-          </>
+        {headCells.map((headCell, i) => (
+          <TableCell
+            key={headCell.id}
+            sortDirection={orderBy === headCell.id ? order : false}
+            sx={i === 0 ? { p: '15px 5px 10px 5px', pl: 2 } : { p: '15px 5px 10px 5px' }}
+          >
+            <Typography variant='body2' sx={{ fontWeight: '600', paddingLeft: '10px' }}>{headCell.label}</Typography>
+          </TableCell>
         ))}
       </TableRow>
       <TableRow className={classes.searchRow}>
-        {headCells.map((headCell) => {
+        {headCells.map((headCell, i) => {
           return (
-            <TableCell>
+            <TableCell
+              sx={
+                i === 0 ? { p: '6px 5px', pl: 2 } : { p: '6px 5px' }}
+            >
               {headCell.searchable &&
                 <Box className={classes.searchBoxWrapper}>
                   <InputBase className={classes.searchBox}

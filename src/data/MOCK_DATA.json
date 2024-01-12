@@ -1,6 +1,6 @@
 [
   {
-    "order_id": 3025019119,
+    "order_id": 1,
     "created_by": "Sheron Pete",
     "assigned_lab": "Lab 1",
     "order_status": "Order Uploaded",
@@ -19,7 +19,7 @@
     "order_journey": ["Order Uploaded", "Order Shipped", "Order Rejected"]
   },
   {
-    "order_id": 6959446525,
+    "order_id": 2,
     "created_by": "Michelle Kylie",
     "assigned_lab": "Lab 1",
     "order_status": "Order Shipped",
@@ -38,7 +38,7 @@
     "order_journey": ["Order Uploaded", "Order Downloaded", "Order Rejected"]
   },
   {
-    "order_id": 2846692228,
+    "order_id": 3,
     "created_by": "Sheron Pete",
     "assigned_lab": "Lab 1",
     "order_status": "Due Date Negotiation",
@@ -61,7 +61,7 @@
     ]
   },
   {
-    "order_id": 1340265534,
+    "order_id": 4,
     "created_by": "Michelle Kylie",
     "assigned_lab": "Lab 1",
     "order_status": "Order Shipped",
@@ -80,7 +80,7 @@
     "order_journey": ["Order Uploaded", "Due Date Negotiation", "Completed"]
   },
   {
-    "order_id": 8878117399,
+    "order_id": 5,
     "created_by": "Michelle Kylie",
     "assigned_lab": "Lab 1",
     "order_status": "Draft Order",

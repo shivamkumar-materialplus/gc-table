@@ -1,15 +1,9 @@
 import React from 'react'
-import { Box, ClickAwayListener, IconButton, Link, Popper, Typography } from "@mui/material";
+import { Box, ClickAwayListener, IconButton, Link, Popper } from "@mui/material";
+import { Link as RouterLink } from 'react-router-dom'
 import { KebabThreeDotsIcon, PopperArrowUpIcon } from '../../icons';
 import { Data } from '../../utils/types';
 import { COLOR } from '../../utils/constants';
-
-type IconLabelProps = {
-  icon: React.JSX.Element;
-  label: string;
-  disabled?: boolean;
-  onClick: () => any;
-}
 
 type ActionButtonsProps = Pick<Data, "order_id" | "action_allowed">
 
@@ -49,20 +43,23 @@ const ActionButtonMenu = ({ order_id, action_allowed: actions }: ActionButtonsPr
         ]}
       >
         <ClickAwayListener onClickAway={handleClose}>
-          <Box sx={{ border: 1, borderRadius: 1, padding: "5px 10px", display: 'flex', flexDirection: 'column', bgcolor: `${COLOR.WHITE}` }}>
+          <Box sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            border: 1,
+            borderRadius: 1,
+            padding: "5px 10px",
+            bgcolor: `${COLOR.WHITE}`,
+            boxShadow: '0px 2px 3px 0px rgba(0, 0, 0, 0.25)'
+          }}>
             <Box data-popper-arrow sx={{ marginTop: "-23px", cursor: 'pointer' }} onClick={handleClose}>{<PopperArrowUpIcon />}</Box>
-            <Link href="#" onClick={(e) => {
-              e.preventDefault();
-              console.log("order_id" + order_id)
-            }}>View Details</Link>
-            <Link href="#" onClick={(e) => {
-              e.preventDefault();
-              console.log("order_id" + order_id)
-            }}>Download Files</Link>
-            <Link href="#" onClick={(e) => {
-              e.preventDefault();
-              console.log("order_id" + order_id)
-            }}>Download Form</Link>
+            <Link component={RouterLink} to={`/order/${order_id}`}>
+              View Details
+            </Link>
+            <Link component={RouterLink} to={`/order/${order_id}`}>
+              Download Files</Link>
+            <Link component={RouterLink} to={`/order/${order_id}`}>
+              Download Form</Link>
           </Box>
 
         </ClickAwayListener>

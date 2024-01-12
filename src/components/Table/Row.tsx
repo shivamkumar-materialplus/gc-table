@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Link, TableCell, TableRow, Tooltip, tooltipClasses } from "@mui/material";
 import { Data } from "../../utils/types";
+import { Link as RouterLink } from 'react-router-dom'
 import { COLOR } from "../../utils/constants";
 import { formatDate, getColor } from "../../utils/helpers";
 import ActionButtonMenu from "./ActionButtonMenu";
@@ -16,13 +17,15 @@ export default function Row(props: Props) {
   return (
     <React.Fragment key={row.order_id}>
       <TableRow hover tabIndex={-1}>
-        <TableCell>
-          <Link href="#">{row.order_id}</Link>
+        <TableCell align="center">
+          <Link component={RouterLink} to={`/order/${row.order_id}`}>
+            {row.order_id}
+          </Link>
         </TableCell>
         <TableCell>{row.patient_name}</TableCell>
         <TableCell>{row.created_by}</TableCell>
         <TableCell>{row.assigned_lab}</TableCell>
-        <TableCell>
+        <TableCell align="center">
           <Tooltip
             placement="top"
             arrow
@@ -57,7 +60,8 @@ export default function Row(props: Props) {
               sx={{
                 backgroundColor: getColor(row.order_status),
                 borderRadius: '13px',
-                padding: '5px 10px'
+                padding: '5px 10px',
+                minWidth: 'max-content',
               }}
             >
               {row.order_status}
