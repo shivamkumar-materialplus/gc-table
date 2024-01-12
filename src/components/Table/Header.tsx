@@ -1,12 +1,12 @@
-import React from 'react'
 import { Box, InputBase, TableCell, TableHead, TableRow, Typography } from "@mui/material";
-import { HeadCell, Order, SortableFields } from "../../utils/types";
+import React from 'react';
+import { HeadCell, Order } from "../../utils/types";
 import { useStyles } from './Header.styles';
 
 
 interface TableHeadProps {
-  onRequestSort: (event: React.MouseEvent<unknown>, property: keyof SortableFields) => void;
-  onRequestSearch: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  handleSearchChange: (columnName: string, value: string) => void;
+  filters: any,
   order: Order;
   orderBy: string;
 }
@@ -24,16 +24,8 @@ const headCells: HeadCell[] = [
 ]
 
 export default function Header(props: TableHeadProps) {
-  const { order, orderBy, onRequestSort, onRequestSearch } =
+  const { order, orderBy, handleSearchChange, filters } =
     props;
-  const createSortHandler =
-    (property: keyof SortableFields) => (event: React.MouseEvent<unknown>) => {
-      onRequestSort(event, property);
-    };
-
-  const createSearchHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onRequestSearch(event);
-  }
   const { classes } = useStyles();
   return (
     <TableHead className={classes.tableHeader}>
@@ -52,6 +44,7 @@ export default function Header(props: TableHeadProps) {
         {headCells.map((headCell, i) => {
           return (
             <TableCell
+              key={headCell.id}
               sx={
                 i === 0 ? { p: '6px 5px', pl: 2 } : { p: '6px 5px' }}
             >
@@ -59,7 +52,8 @@ export default function Header(props: TableHeadProps) {
                 <Box className={classes.searchBoxWrapper}>
                   <InputBase className={classes.searchBox}
                     placeholder="Search"
-                    onChange={(e) => { createSearchHandler(e as React.ChangeEvent<HTMLInputElement>) }}
+                    value={filters[headCell.id] || ''}
+                    onChange={(e) => handleSearchChange(headCell.id, e.target.value)}
                   />
                 </Box>}
             </TableCell>

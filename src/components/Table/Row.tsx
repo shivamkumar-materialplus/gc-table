@@ -1,9 +1,9 @@
-import React from "react";
 import { Box, Link, TableCell, TableRow, Tooltip, tooltipClasses } from "@mui/material";
-import { Data } from "../../utils/types";
-import { Link as RouterLink } from 'react-router-dom'
+import React from "react";
+import { Link as RouterLink } from 'react-router-dom';
 import { COLOR } from "../../utils/constants";
 import { formatDate, getColor } from "../../utils/helpers";
+import { Data } from "../../utils/types";
 import ActionButtonMenu from "./ActionButtonMenu";
 import OrderJourneyPopper from "./OrderJourneyPopper";
 

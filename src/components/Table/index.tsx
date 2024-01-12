@@ -1,46 +1,46 @@
-import React, { useState, useMemo } from 'react'
 import {
   Pagination, PaginationItem, Paper, Table, TableBody, TableCell, TableContainer, TableRow
 } from '@mui/material';
+import React, { useMemo, useState } from 'react';
 
-import { Data, Order, SortableFields } from '../../utils/types';
-import { getComparator, stableSort } from '../../utils/helpers';
 import MenuBox from '../../components/MenuBox';
-import { LastIcon, NextIcon, PreviousIcon, FirstIcon } from '../../icons';
-import Row from './Row';
-import TableHeader from './Header';
-import { useStyles } from './index.styles';
+import { FirstIcon, LastIcon, NextIcon, PreviousIcon } from '../../icons';
 import { COLOR } from '../../utils/constants';
+import { getComparator, stableSort } from '../../utils/helpers';
+import { Data, Order, SortableFields } from '../../utils/types';
+import TableHeader from './Header';
+import Row from './Row';
+import { useStyles } from './index.styles';
 
 type Props = {
   data: Data[]
 }
 
 export default function MyTable({ data }: Props) {
-  const [showCompleted, setShowCompleted] = useState(true);
-  const [searchText, setSearchText] = useState('');
   const [order, setOrder] = useState<Order>('asc');
   const [orderBy, setOrderBy] = useState<keyof SortableFields>('order_id');
   const [page, setPage] = useState(1);
 
-  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchText((event.target).value);
+  const [filters, setFilters] = useState<{ [key: string]: string }>({});
+
+  const handleSearchChange = (columnName: string, value: string) => {
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      [columnName]: value,
+    }));
     setPage(1);
   };
 
-  const handleToggleFilter = () => {
-    setShowCompleted(!showCompleted);
-  };
   const rowsPerPage = 10;
 
-  const rows = (showCompleted ? data : data.filter(item => item.order_status !== "Order completed"))
-    .filter(
-      (item) =>
-        item.order_id.toString().includes(searchText) ||
-        item.created_by.toLowerCase().includes(searchText.toLowerCase()) ||
-        item.patient_id.toString().includes(searchText) ||
-        item.patient_name.toLowerCase().includes(searchText.toLowerCase())
-    );
+  // @TODO: Fix any here
+  const rows = data.filter((row: any) => {
+    return Object.keys(filters).every((columnName) => {
+      const cellValue = row[columnName]?.toString().toLowerCase();
+      const filterValue = filters[columnName]?.toLowerCase();
+      return cellValue && cellValue.includes(filterValue);
+    });
+  });
 
   const { classes } = useStyles();
 
@@ -54,7 +54,7 @@ export default function MyTable({ data }: Props) {
         (page - 1) * rowsPerPage,
         (page - 1) * rowsPerPage + rowsPerPage,
       ),
-    [order, orderBy, page, rowsPerPage, showCompleted, searchText, data],
+    [order, orderBy, page, rowsPerPage, filters],
   );
 
   const handleRequestSort = (
@@ -65,10 +65,6 @@ export default function MyTable({ data }: Props) {
     setOrder(isAsc ? 'desc' : 'asc');
     setOrderBy(property);
   };
-
-  const handleRequestSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log('searching')
-  }
 
   const handleChangePage = (event: unknown, newPage: number) => {
     setPage(newPage);
@@ -83,12 +79,12 @@ export default function MyTable({ data }: Props) {
             <TableHeader
               order={order}
               orderBy={orderBy}
-              onRequestSort={handleRequestSort}
-              onRequestSearch={handleRequestSearch}
+              handleSearchChange={handleSearchChange}
+              filters={filters}
             />
             <TableBody className={classes.tableBody}>
               {visibleRows.map((row) =>
-                <Row row={row} />)}
+                <Row row={row} key={row.order_id} />)}
               {emptyRows > 0 && (
                 <TableRow
                   style={{

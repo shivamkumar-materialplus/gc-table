@@ -1,8 +1,8 @@
-import React from 'react'
-import { OrderStatus } from "../../utils/types"
-import { getColor } from '../../utils/helpers'
 import { Box, Paper } from '@mui/material'
+import React from 'react'
 import { COLOR } from '../../utils/constants'
+import { getColor } from '../../utils/helpers'
+import { OrderStatus } from "../../utils/types"
 
 const OrderJourneyPopper = ({ order_journey }: { order_journey: OrderStatus[] }) => {
   const firstSvg = (status: OrderStatus) => <svg xmlns="http://www.w3.org/2000/svg" width="167" height="37" viewBox="0 0 167 37" fill="none">

@@ -1,7 +1,6 @@
 import { Link, Stack, Typography } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom'
-import React from 'react'
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { Link as RouterLink, useParams } from 'react-router-dom';
 import { PreviousIcon } from '../icons';
 
 type Props = {}
