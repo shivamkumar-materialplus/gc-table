@@ -29,8 +29,7 @@ export type Data = {
 
 export type Order = "asc" | "desc";
 
-type temp = Omit<Data, "action_allowed">;
-export type SortableFields = Omit<temp, "order_journey">;
+export type SortableFields = Omit<Data, "order_journey" | "action_allowed">;
 
 export type HeadCell = {
   id: keyof Data;

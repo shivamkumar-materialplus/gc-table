@@ -1,8 +1,8 @@
-import * as React from 'react';
 import Container from '@mui/material/Container';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import OrderDetails from './pages/OrderDetails';
+import * as React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
+import OrderDetailsPage from './pages/OrderDetails';
 
 export default function App() {
   return (
@@ -10,7 +10,7 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="order/:orderId" element={<OrderDetails />} />
+          <Route path="order/:orderId" element={<OrderDetailsPage />} />
           <Route path="*" element={<h1>Invalid Path</h1>} />
         </Routes>
       </BrowserRouter>
