@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-import MyTable from '../components/Table'
-import data from '../data/MOCK_DATA.json'
+import OrdersList from './OrdersList'
 
 function Home() {
   return (
@@ -9,7 +8,8 @@ function Home() {
       <Typography variant="h5" component="h1" gutterBottom>
         Orders
       </Typography>
-      <MyTable data={data} />
+      {/* <MyTable data={data} /> */}
+      <OrdersList />
     </Box>
   )
 }
