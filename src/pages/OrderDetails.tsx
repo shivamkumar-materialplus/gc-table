@@ -85,12 +85,6 @@ function OrderDetails({ orderId }: { orderId: string | undefined }) {
     tooth_area: '9',
     color: "Color",
     material: "イニシャル LiSiブロック",
-  },
-  {
-    restoration_type: "インレー",
-    tooth_area: '13',
-    color: "Color",
-    material: "イニシャル LiSiブロック",
   }]
 
   return <Paper elevation={3} sx={{ boxShadow: '2px 6px 33px 0px rgba(0, 0, 0, 0.25)', p: '34px 39px 69px', mb: "48px" }} className='section-to-print'>
