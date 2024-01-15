@@ -1,0 +1,12 @@
+@media print {
+  .section-to-print {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  /* to use on individual item such as buttons, etc. to hide on priting */
+  .noprint {
+    display: none !important;
+  }
+}

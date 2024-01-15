@@ -7,32 +7,15 @@ import { COLOR } from '../utils/constants';
 
 type Props = {}
 
-function BreadCrumb({ }: {}) {
-  return <Stack spacing={1} mb={1}>
-    <Breadcrumbs separator=">>" aria-label="breadcrumb" sx={{ '.MuiBreadcrumbs-separator': { color: `${COLOR.GC_GREEN_AA}` } }}>
-      <Link
-        underline="hover"
-        key="1"
-        to="/"
-        component={RouterLink}
-      >
-        Order Listing
-      </Link>
-      <Typography key="2" sx={{ fontWeight: 'bold' }}>
-        View Order
-      </Typography>
-    </Breadcrumbs>
-  </Stack>
-}
-
 type IconLabelProps = {
   icon: React.JSX.Element;
   label: string;
   disabled?: boolean;
   onClick: () => any;
+  classes?: string
 }
 
-const IconLabelButton = ({ icon, label, disabled, onClick }: IconLabelProps) => {
+const IconLabelButton = ({ icon, label, disabled, onClick, classes }: IconLabelProps) => {
   return (
     <IconButton
       sx={{
@@ -48,6 +31,7 @@ const IconLabelButton = ({ icon, label, disabled, onClick }: IconLabelProps) => 
       }}
       disabled={disabled}
       onClick={onClick}
+      className={classes}
     >
       {icon}
       <Typography color={COLOR.GC_GREEN_AA} sx={{ textDecoration: 'underline' }}>{label}</Typography>
@@ -109,15 +93,15 @@ function OrderDetails({ orderId }: { orderId: string | undefined }) {
     material: "イニシャル LiSiブロック",
   }]
 
-  return <Paper elevation={3} sx={{ boxShadow: '2px 6px 33px 0px rgba(0, 0, 0, 0.25)', p: '34px 39px 69px' }}>
+  return <Paper elevation={3} sx={{ boxShadow: '2px 6px 33px 0px rgba(0, 0, 0, 0.25)', p: '34px 39px 69px', mb: "48px" }} className='section-to-print'>
     <Stack gap={4}>
       {/* Top section with download and print button */}
       <Stack direction={"row"} alignItems={'center'} gap={3}>
         <Typography variant='body1' sx={{ fontSize: '32px', lineHeight: '150%' }}>Order ID: {orderId}</Typography>
         <Box sx={{ p: '8px 12px', backgroundColor: COLOR.LIGHT_GRAY, borderRadius: 1 }}>Order Uploaded</Box>
         <Stack direction={"row"} gap={4} ml={"auto"}>
-          <IconLabelButton icon={<DownloadIcon color={COLOR.GC_GREEN_AA} />} label='Download Order' onClick={() => { }} />
-          <IconLabelButton icon={<PrintIcon color={COLOR.GC_GREEN_AA} />} label='Print Order' onClick={() => { window.print(); }} />
+          <IconLabelButton icon={<DownloadIcon color={COLOR.GC_GREEN_AA} />} label='Download Order' onClick={() => { }} classes={"noprint"} />
+          <IconLabelButton icon={<PrintIcon color={COLOR.GC_GREEN_AA} />} label='Print Order' onClick={() => { window.print(); }} classes={"noprint"} />
         </Stack>
       </Stack>
       {/* Patient Details */}
@@ -244,10 +228,22 @@ export default function OrderDetailsPage() {
 
   return (
     <>
-      <Typography variant='h2' sx={{ pt: 4, pb: 2, fontSize: '42px', lineHeight: '63px', fontWeight: 'bold' }}>
+      <Typography variant='h2' sx={{ pt: 4, pb: 2, fontSize: '42px', lineHeight: '63px', fontWeight: 'bold' }} className='noprint'>
         View Order Details
       </Typography>
-      <BreadCrumb />
+      <Breadcrumbs separator=">>" aria-label="breadcrumb" sx={{ '.MuiBreadcrumbs-separator': { color: `${COLOR.GC_GREEN_AA}` }, py: '16px' }} className='noprint'>
+        <Link
+          underline="hover"
+          key="1"
+          to="/"
+          component={RouterLink}
+        >
+          Order Listing
+        </Link>
+        <Typography key="2" sx={{ fontWeight: 'bold' }}>
+          View Order
+        </Typography>
+      </Breadcrumbs>
       <OrderDetails orderId={orderId} />
     </>
   )
