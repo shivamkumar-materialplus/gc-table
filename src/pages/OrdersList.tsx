@@ -36,21 +36,7 @@ export default function OrdersList() {
         //   `https://api.example.com/data?search=${searchText}&page=${page + 1}&perPage=${rowsPerPage}`
         // );
         // setData(response.data);
-        const cleanRows = data1.map(row => {
-          return {
-            order_id: row.order_id,
-            created_by: row.created_by,
-            assigned_lab: row.assigned_lab,
-            order_status: row.order_status,
-            created_date: row.created_date,
-            delivery_date: row.delivery_date,
-            patient_id: row.patient_id,
-            patient_name: row.patient_name,
-            restoration_type: row.restoration_type,
-            lab_information: row.lab_information,
-          }
-        });
-        setData(cleanRows);
+        setData(data1);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
