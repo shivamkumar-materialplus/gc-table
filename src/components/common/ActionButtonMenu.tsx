@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+
 import { Box, ClickAwayListener, IconButton, Link, Popper } from "@mui/material";
-import { Link as RouterLink } from 'react-router-dom'
+import { Link as RouterLink } from 'react-router-dom';
+
 import { KebabThreeDotsIcon, PopperArrowUpIcon } from '../../icons';
-import { Data } from '../../utils/types';
 import { COLOR } from '../../utils/constants';
+import { Data } from '../../utils/types';
 
 type ActionButtonsProps = Pick<Data, "order_id" | "action_allowed">
 

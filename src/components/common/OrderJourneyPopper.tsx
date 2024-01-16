@@ -1,5 +1,7 @@
-import { Box, Paper } from '@mui/material'
 import React from 'react'
+
+import { Box, Paper } from '@mui/material'
+
 import { COLOR } from '../../utils/constants'
 import { getColor } from '../../utils/helpers'
 import { OrderStatus } from "../../utils/types"

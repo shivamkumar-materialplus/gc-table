@@ -1,5 +1,7 @@
-import { Pagination, PaginationItem, Paper, Table, TableBody, TableContainer, TableHead } from '@mui/material';
 import React, { useMemo } from 'react';
+
+import { Pagination, PaginationItem, Paper, Table, TableBody, TableContainer, TableHead } from '@mui/material';
+
 import { FirstIcon, LastIcon, NextIcon, PreviousIcon } from '../../icons';
 import { COLOR } from '../../utils/constants';
 import { Column } from '../../utils/types';

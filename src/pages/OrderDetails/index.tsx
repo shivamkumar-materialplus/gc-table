@@ -1,46 +1,19 @@
-import { Box, Breadcrumbs, Divider, IconButton, Link, Paper, Stack, TableCell, TableRow, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+
+import { Box, Breadcrumbs, Divider, Link, Paper, Stack, Typography } from '@mui/material';
 import { Link as RouterLink, useParams } from 'react-router-dom';
-import DataTable from '../components/DataTable';
-import TableHeader from '../components/DataTable/TableHeader';
-import { DownloadIcon, NoteIcon, PrintIcon } from '../icons';
-import { COLOR } from '../utils/constants';
-import { TableRowProps } from '../utils/types';
+
+import DataTable from '../../components/DataTable';
+import TableHeader from '../../components/DataTable/TableHeader';
+import IconLabelButton from '../../components/common/IconLabelButton';
+import { DownloadIcon, PrintIcon } from '../../icons';
+import { COLOR } from '../../utils/constants';
+import TableRowComponent from './ui/TableRow';
 
 
 type Props = {}
 
-type IconLabelProps = {
-  icon: React.JSX.Element;
-  label: string;
-  disabled?: boolean;
-  onClick: () => any;
-  classes?: string
-}
 
-const IconLabelButton = ({ icon, label, disabled, onClick, classes }: IconLabelProps) => {
-  return (
-    <IconButton
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: 0,
-        borderRadius: 0,
-        backgroundColor: 'none',
-        '&:hover': {
-          backgroundColor: 'transparent',
-        }
-      }}
-      disabled={disabled}
-      onClick={onClick}
-      className={classes}
-    >
-      {icon}
-      <Typography color={COLOR.GC_GREEN_AA} sx={{ textDecoration: 'underline' }}>{label}</Typography>
-    </IconButton>
-  );
-};
 
 function InfoBox({ horizontal, title, value }: { horizontal?: boolean, title: string, value: string }) {
   return horizontal
@@ -60,19 +33,7 @@ function InfoBox({ horizontal, title, value }: { horizontal?: boolean, title: st
     </Stack>
 }
 
-const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
-  return (
-    <TableRow key={row.order_id}>
-      <TableCell component="th" scope="row">
-        {row.restoration_type}
-      </TableCell>
-      <TableCell>{row.tooth_area}</TableCell>
-      <TableCell>{row.color}</TableCell>
-      <TableCell>{row.material}</TableCell>
-      <TableCell align="center"><IconLabelButton icon={<NoteIcon />} label='View Note' onClick={() => { }} /></TableCell>
-    </TableRow>
-  );
-};
+
 
 function OrderDetails({ orderId }: { orderId: string | undefined }) {
   if (typeof orderId === undefined) {
