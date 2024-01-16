@@ -4,8 +4,8 @@ import { Link as RouterLink } from 'react-router-dom';
 import { COLOR } from "../../utils/constants";
 import { formatDate, getColor } from "../../utils/helpers";
 import { Data } from "../../utils/types";
-import ActionButtonMenu from "./ActionButtonMenu";
-import OrderJourneyPopper from "./OrderJourneyPopper";
+import ActionButtonMenu from "../common/ActionButtonMenu";
+import OrderJourneyPopper from "../common/OrderJourneyPopper";
 
 type Props = {
   row: Data;

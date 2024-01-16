@@ -1,8 +1,11 @@
-import { Box, Breadcrumbs, Divider, IconButton, Link, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from '@mui/material';
-import React from 'react';
+import { Box, Breadcrumbs, Divider, IconButton, Link, Paper, Stack, TableCell, TableRow, Typography } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 import { Link as RouterLink, useParams } from 'react-router-dom';
+import DataTable from '../components/DataTable';
+import TableHeader from '../components/DataTable/TableHeader';
 import { DownloadIcon, NoteIcon, PrintIcon } from '../icons';
 import { COLOR } from '../utils/constants';
+import { TableRowProps } from '../utils/types';
 
 
 type Props = {}
@@ -57,10 +60,36 @@ function InfoBox({ horizontal, title, value }: { horizontal?: boolean, title: st
     </Stack>
 }
 
+const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
+  return (
+    <TableRow key={row.order_id}>
+      <TableCell component="th" scope="row">
+        {row.restoration_type}
+      </TableCell>
+      <TableCell>{row.tooth_area}</TableCell>
+      <TableCell>{row.color}</TableCell>
+      <TableCell>{row.material}</TableCell>
+      <TableCell align="center"><IconLabelButton icon={<NoteIcon />} label='View Note' onClick={() => { }} /></TableCell>
+    </TableRow>
+  );
+};
+
 function OrderDetails({ orderId }: { orderId: string | undefined }) {
   if (typeof orderId === undefined) {
     return null
   }
+
+  const [data, setData] = useState<any[]>([])
+  const [page, setPage] = useState(1);
+  const [rowsPerPage, setRowsPerPage] = useState(6);
+
+  const columns = [
+    { id: 'restoration_type', label: 'Restoration Type', },
+    { id: 'tooth_area', label: 'Tooth Area', },
+    { id: 'color', label: 'Color', },
+    { id: 'material', label: 'Material', },
+    { id: 'actions', label: 'Actions' }
+  ];
 
   const rows = [{
     restoration_type: "インレー",
@@ -82,10 +111,56 @@ function OrderDetails({ orderId }: { orderId: string | undefined }) {
   },
   {
     restoration_type: "インレー",
+    tooth_area: '12',
+    color: "Color",
+    material: "イニシャル LiSiブロック",
+  },
+  {
+    restoration_type: "インレー",
+    tooth_area: '12',
+    color: "Color",
+    material: "イニシャル LiSiブロック",
+  },
+  {
+    restoration_type: "インレー",
+    tooth_area: '12',
+    color: "Color",
+    material: "イニシャル LiSiブロック",
+  },
+  {
+    restoration_type: "インレー",
+    tooth_area: '12',
+    color: "Color",
+    material: "イニシャル LiSiブロック",
+  },
+  {
+    restoration_type: "インレー",
+    tooth_area: '12',
+    color: "Color",
+    material: "イニシャル LiSiブロック",
+  },
+  {
+    restoration_type: "インレー",
     tooth_area: '9',
     color: "Color",
     material: "イニシャル LiSiブロック",
   }]
+
+  useEffect(() => {
+    // Function to fetch data from the API
+    const fetchData = async () => {
+      try {
+        setData(rows);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const handleChangePage = (event: unknown, newPage: number) => {
+    setPage(newPage);
+  };
 
   return <Paper elevation={3} sx={{ boxShadow: '2px 6px 33px 0px rgba(0, 0, 0, 0.25)', p: '34px 39px 69px', mb: "48px" }} className='section-to-print'>
     <Stack gap={4}>
@@ -164,32 +239,16 @@ function OrderDetails({ orderId }: { orderId: string | undefined }) {
               <img src='/all-teeth.png' alt='Selected Teeth' loading="lazy" />
             </Box>
           </Stack>
-          <TableContainer component={Paper} sx={{ borderRadius: '10px' }}>
-            <Table aria-label="table">
-              <TableHead>
-                <TableRow sx={{ bgcolor: COLOR.LIGHT_GREEN }}>
-                  <TableCell>Restoration Type</TableCell>
-                  <TableCell>Tooth Area</TableCell>
-                  <TableCell>Color</TableCell>
-                  <TableCell>Material</TableCell>
-                  <TableCell>Actions</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {rows.map((row) => (
-                  <TableRow key={row.restoration_type}>
-                    <TableCell component="th" scope="row">
-                      {row.restoration_type}
-                    </TableCell>
-                    <TableCell>{row.tooth_area}</TableCell>
-                    <TableCell>{row.color}</TableCell>
-                    <TableCell>{row.material}</TableCell>
-                    <TableCell align="center"><IconLabelButton icon={<NoteIcon />} label='View Note' onClick={() => { }} /></TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </TableContainer>
+          <DataTable
+            columns={columns}
+            data={data}
+            renderHeader={(columns) => <TableHeader columns={columns} />}
+            renderRow={(row) => <TableRowComponent row={row} />}
+            page={page}
+            rowsPerPage={rowsPerPage}
+            onPageChange={handleChangePage}
+            sx={{ borderRadius: '10px', boxShadow: '0px 1px 4px 0px rgba(0, 0, 0, 0.25)' }}
+          />
         </Stack>
       </Stack>
       {/* Set Date */}

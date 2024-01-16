@@ -37,3 +37,13 @@ export type HeadCell = {
   sortable?: boolean;
   searchable?: boolean;
 };
+
+export interface Column {
+  id: string;
+  label: string;
+}
+
+export interface TableRowProps {
+  row: any;
+  columns?: Column[];
+}
