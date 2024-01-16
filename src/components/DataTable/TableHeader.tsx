@@ -1,4 +1,3 @@
-
 import { TableCell, TableRow, Typography } from '@mui/material';
 import React from 'react';
 import { Column } from '../../utils/types';
