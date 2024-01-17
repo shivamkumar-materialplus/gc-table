@@ -3,13 +3,14 @@ import React from 'react';
 import { Box, Link, TableCell, TableRow, Tooltip, tooltipClasses } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-import ActionButtonMenu from 'components/common/ActionButtonMenu';
+import KebabMenu from 'components/common/KebabMenu';
 import OrderJourneyPopper from 'components/common/OrderJourneyPopper';
 import { COLOR } from 'utils/constants';
 import { formatDate, getColor } from 'utils/helpers';
 import { TableRowProps } from 'utils/types';
 
 const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
+
   return (
     <React.Fragment key={row.order_id}>
       <TableRow hover tabIndex={-1} key={row.order_id}>
@@ -68,7 +69,11 @@ const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
         <TableCell>{formatDate(row.created_date)}</TableCell>
         <TableCell>{formatDate(row.delivery_date)}</TableCell>
         <TableCell align="center">
-          <ActionButtonMenu order_id={row.order_id} action_allowed={row.action_allowed} />
+          <KebabMenu>
+            <Link component={RouterLink} to={`/order/${row.order_id}`}>View Details</Link>
+            <Link component={RouterLink} to={`/order/${row.order_id}`}>Download Files</Link>
+            <Link component={RouterLink} to={`/order/${row.order_id}`}>Download Form</Link>
+          </KebabMenu>
         </TableCell>
       </TableRow>
     </React.Fragment >
