@@ -3,11 +3,11 @@ import React from 'react';
 import { Box, Link, TableCell, TableRow, Tooltip, tooltipClasses } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-import ActionButtonMenu from '../../../components/common/ActionButtonMenu';
-import OrderJourneyPopper from '../../../components/common/OrderJourneyPopper';
-import { COLOR } from '../../../utils/constants';
-import { formatDate, getColor } from '../../../utils/helpers';
-import { TableRowProps } from '../../../utils/types';
+import ActionButtonMenu from 'components/common/ActionButtonMenu';
+import OrderJourneyPopper from 'components/common/OrderJourneyPopper';
+import { COLOR } from 'utils/constants';
+import { formatDate, getColor } from 'utils/helpers';
+import { TableRowProps } from 'utils/types';
 
 const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
   return (

@@ -3,17 +3,15 @@ import React, { useEffect, useState } from 'react';
 import { Box, Breadcrumbs, Divider, Link, Paper, Stack, Typography } from '@mui/material';
 import { Link as RouterLink, useParams } from 'react-router-dom';
 
-import DataTable from '../../components/DataTable';
-import TableHeader from '../../components/DataTable/TableHeader';
-import IconLabelButton from '../../components/common/IconLabelButton';
-import { DownloadIcon, PrintIcon } from '../../icons';
-import { COLOR } from '../../utils/constants';
+import DataTable from 'components/DataTable';
+import TableHeader from 'components/DataTable/TableHeader';
+import IconLabelButton from 'components/common/IconLabelButton';
+import { DownloadIcon, PrintIcon } from 'icons';
+import { COLOR } from 'utils/constants';
 import TableRowComponent from './ui/TableRow';
 
 
 type Props = {}
-
-
 
 function InfoBox({ horizontal, title, value }: { horizontal?: boolean, title: string, value: string }) {
   return horizontal
@@ -32,8 +30,6 @@ function InfoBox({ horizontal, title, value }: { horizontal?: boolean, title: st
       </Typography>
     </Stack>
 }
-
-
 
 function OrderDetails({ orderId }: { orderId: string | undefined }) {
   if (typeof orderId === undefined) {
@@ -130,8 +126,14 @@ function OrderDetails({ orderId }: { orderId: string | undefined }) {
         <Typography variant='body1' sx={{ fontSize: '32px', lineHeight: '150%' }}>Order ID: {orderId}</Typography>
         <Box sx={{ p: '8px 12px', backgroundColor: COLOR.LIGHT_GRAY, borderRadius: 1 }}>Order Uploaded</Box>
         <Stack direction={"row"} gap={4} ml={"auto"}>
-          <IconLabelButton icon={<DownloadIcon color={COLOR.GC_GREEN_AA} />} label='Download Order' onClick={() => { }} classes={"noprint"} />
-          <IconLabelButton icon={<PrintIcon color={COLOR.GC_GREEN_AA} />} label='Print Order' onClick={() => { window.print(); }} classes={"noprint"} />
+          <IconLabelButton onClick={() => { }} className={"noprint"}>
+            <DownloadIcon color={COLOR.GC_GREEN_AA} />
+            <Typography color={COLOR.GC_GREEN_AA} sx={{ textDecoration: 'underline' }}>Download Order</Typography>
+          </IconLabelButton>
+          <IconLabelButton onClick={() => window.print()} className={"noprint"} >
+            <PrintIcon color={COLOR.GC_GREEN_AA} />
+            <Typography color={COLOR.GC_GREEN_AA} sx={{ textDecoration: 'underline' }}>Print Order</Typography>
+          </IconLabelButton>
         </Stack>
       </Stack>
       {/* Patient Details */}

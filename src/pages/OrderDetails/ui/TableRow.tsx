@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { TableCell, TableRow } from "@mui/material";
+import { TableCell, TableRow, Typography } from "@mui/material";
 
-import IconLabelButton from "../../../components/common/IconLabelButton";
-import { NoteIcon } from "../../../icons";
-import { TableRowProps } from "../../../utils/types";
+import IconLabelButton from 'components/common/IconLabelButton';
+import { NoteIcon } from 'icons';
+import { COLOR } from 'utils/constants';
+import { TableRowProps } from "utils/types";
 
 const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
   return (
@@ -15,7 +16,12 @@ const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
       <TableCell>{row.tooth_area}</TableCell>
       <TableCell>{row.color}</TableCell>
       <TableCell>{row.material}</TableCell>
-      <TableCell align="center"><IconLabelButton icon={<NoteIcon />} label='View Note' onClick={() => { }} /></TableCell>
+      <TableCell align="center">
+        <IconLabelButton onClick={() => { }} >
+          <NoteIcon />
+          <Typography color={COLOR.GC_GREEN_AA} sx={{ textDecoration: 'underline' }}>View Note</Typography>
+        </IconLabelButton>
+      </TableCell>
     </TableRow>
   );
 };

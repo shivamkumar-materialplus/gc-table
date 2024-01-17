@@ -3,9 +3,9 @@ import React from 'react';
 import { Box, ClickAwayListener, IconButton, Link, Popper } from "@mui/material";
 import { Link as RouterLink } from 'react-router-dom';
 
-import { KebabThreeDotsIcon, PopperArrowUpIcon } from '../../icons';
-import { COLOR } from '../../utils/constants';
-import { Data } from '../../utils/types';
+import { KebabThreeDotsIcon, PopperArrowUpIcon } from 'icons';
+import { COLOR } from 'utils/constants';
+import { Data } from 'utils/types';
 
 type ActionButtonsProps = Pick<Data, "order_id" | "action_allowed">
 
@@ -63,7 +63,6 @@ const ActionButtonMenu = ({ order_id, action_allowed: actions }: ActionButtonsPr
             <Link component={RouterLink} to={`/order/${order_id}`}>
               Download Form</Link>
           </Box>
-
         </ClickAwayListener>
       </Popper>
     </>

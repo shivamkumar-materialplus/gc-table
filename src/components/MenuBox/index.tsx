@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Box, Button } from '@mui/material';
 
-import { FilterIcon } from '../../icons';
+import { FilterIcon } from 'icons';
 import { useStyles } from './index.styles';
 
 function MenuBox() {

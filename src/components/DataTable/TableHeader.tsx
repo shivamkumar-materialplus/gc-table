@@ -2,7 +2,7 @@ import React from 'react';
 
 import { TableCell, TableRow, Typography } from '@mui/material';
 
-import { Column } from '../../utils/types';
+import { Column } from 'utils/types';
 import { useStyles } from './TableHeader.styles';
 
 interface TableHeaderProps {

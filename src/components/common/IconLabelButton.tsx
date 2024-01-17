@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-import { IconButton, Typography } from "@mui/material";
-import { COLOR } from "../../utils/constants";
+import { IconButton } from "@mui/material";
 
 type IconLabelProps = {
-  icon: React.JSX.Element;
-  label: string;
   disabled?: boolean;
-  onClick: () => any;
-  classes?: string
+  onClick?: () => any;
+  className?: string;
+  children: ReactNode[]
 }
 
-const IconLabelButton = ({ icon, label, disabled, onClick, classes }: IconLabelProps) => {
+const IconLabelButton = ({ disabled, onClick, className, children }: IconLabelProps) => {
+  const [myicon, mylabel] = children;
   return (
     <IconButton
       sx={{
@@ -27,10 +26,10 @@ const IconLabelButton = ({ icon, label, disabled, onClick, classes }: IconLabelP
       }}
       disabled={disabled}
       onClick={onClick}
-      className={classes}
+      className={className}
     >
-      {icon}
-      <Typography color={COLOR.GC_GREEN_AA} sx={{ textDecoration: 'underline' }}>{label}</Typography>
+      {myicon}
+      {mylabel}
     </IconButton>
   );
 };

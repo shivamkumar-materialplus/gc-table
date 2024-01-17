@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 
 import { Box, Typography } from '@mui/material';
 
-import DataTable from '../../components/DataTable';
-import TableHeader from '../../components/DataTable/TableHeader';
-import MenuBox from '../../components/MenuBox';
-import data1 from '../../data/MOCK_DATA.json';
+import DataTable from 'components/DataTable';
+import TableHeader from 'components/DataTable/TableHeader';
+import MenuBox from 'components/MenuBox';
+import data1 from 'data/MOCK_DATA.json';
 import TableRowComponent from './ui/TableRow';
 
 
