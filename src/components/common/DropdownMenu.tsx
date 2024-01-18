@@ -2,15 +2,16 @@ import React, { ReactNode } from 'react';
 
 import { Box, IconButton } from "@mui/material";
 
-import { KebabThreeDotsIcon, PopperArrowUpIcon } from 'icons';
+import { PopperArrowUpIcon } from 'icons';
 import { COLOR } from 'utils/constants';
 import PopComponent from './PopComponent';
 
-type KebabMenuProps = {
+type DropdownMenuProps = {
+  clickableIcon: ReactNode
   children: ReactNode[]
 }
 
-const KebabMenu = ({ children }: KebabMenuProps) => {
+const DropdownMenu = ({ children, clickableIcon }: DropdownMenuProps) => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
@@ -29,7 +30,7 @@ const KebabMenu = ({ children }: KebabMenuProps) => {
         onClick={handleClick}
         aria-describedby={id}
       >
-        <KebabThreeDotsIcon />
+        {clickableIcon}
       </IconButton>
       <PopComponent
         id={id}
@@ -54,4 +55,4 @@ const KebabMenu = ({ children }: KebabMenuProps) => {
   )
 }
 
-export default KebabMenu
+export default DropdownMenu

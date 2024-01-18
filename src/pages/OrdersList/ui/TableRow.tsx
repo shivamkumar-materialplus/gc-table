@@ -3,8 +3,9 @@ import React from 'react';
 import { Box, Link, TableCell, TableRow, Tooltip, tooltipClasses } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
-import KebabMenu from 'components/common/KebabMenu';
+import DropdownMenu from 'components/common/DropdownMenu';
 import OrderJourneyPopper from 'components/common/OrderJourneyPopper';
+import { KebabThreeDotsIcon } from 'icons';
 import { COLOR } from 'utils/constants';
 import { formatDate, getColor } from 'utils/helpers';
 import { TableRowProps } from 'utils/types';
@@ -69,11 +70,11 @@ const TableRowComponent: React.FC<TableRowProps> = ({ row }) => {
         <TableCell>{formatDate(row.created_date)}</TableCell>
         <TableCell>{formatDate(row.delivery_date)}</TableCell>
         <TableCell align="center">
-          <KebabMenu>
+          <DropdownMenu clickableIcon={<KebabThreeDotsIcon />}>
             <Link component={RouterLink} to={`/order/${row.order_id}`}>View Details</Link>
             <Link component={RouterLink} to={`/order/${row.order_id}`}>Download Files</Link>
             <Link component={RouterLink} to={`/order/${row.order_id}`}>Download Form</Link>
-          </KebabMenu>
+          </DropdownMenu>
         </TableCell>
       </TableRow>
     </React.Fragment >
