@@ -10,7 +10,7 @@ type Props = {
   children: ReactNode
 }
 
-function PopComponent({ id, anchorEl, open, handleClose, children }: Props) {
+function DropDownComponent({ id, anchorEl, open, handleClose, children }: Props) {
   return (
     <Popper
       id={id}
@@ -35,4 +35,4 @@ function PopComponent({ id, anchorEl, open, handleClose, children }: Props) {
   )
 }
 
-export default PopComponent
+export default DropDownComponent

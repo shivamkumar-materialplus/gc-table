@@ -4,7 +4,7 @@ import { Box, IconButton } from "@mui/material";
 
 import { PopperArrowUpIcon } from 'icons';
 import { COLOR } from 'utils/constants';
-import PopComponent from './PopComponent';
+import DropDownComponent from './DropDownComponent';
 
 type DropdownMenuProps = {
   clickableIcon: ReactNode
@@ -32,7 +32,7 @@ const DropdownMenu = ({ children, clickableIcon }: DropdownMenuProps) => {
       >
         {clickableIcon}
       </IconButton>
-      <PopComponent
+      <DropDownComponent
         id={id}
         open={open}
         anchorEl={anchorEl}
@@ -50,7 +50,7 @@ const DropdownMenu = ({ children, clickableIcon }: DropdownMenuProps) => {
           <Box data-popper-arrow sx={{ marginTop: "-23px", cursor: 'pointer' }} onClick={handleClose}>{<PopperArrowUpIcon />}</Box>
           {children}
         </Box>
-      </PopComponent>
+      </DropDownComponent>
     </>
   )
 }
