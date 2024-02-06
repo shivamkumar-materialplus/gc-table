@@ -10,8 +10,13 @@ const SELECTED_FILL_COLOR = "#FF0000";
 
 export default ({ selectedTeeth, onClick }: Props) => {
 
-  const handleTeethClick = (teethId: string) => {
-    onClick(selectedTeeth === teethId ? "" : teethId)
+  const handleSvgClick = (event: React.MouseEvent<SVGSVGElement>) => {
+    const target = event.target as SVGElement; // Typecasting to SVGElement
+    const teethId = target.getAttribute('data-teeth-id');
+
+    if (teethId) {
+      onClick(selectedTeeth === teethId ? "" : teethId);
+    }
   };
 
   return (
@@ -21,6 +26,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
       viewBox="0 0 267 500"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={handleSvgClick}
     >
       <path
         opacity="0.5"
@@ -29,7 +35,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("11")}
+        data-teeth-id="11"
       />
       <path
         opacity="0.5"
@@ -38,7 +44,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("12")}
+        data-teeth-id="12"
       />
       <path
         opacity="0.5"
@@ -47,7 +53,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("13")}
+        data-teeth-id="13"
       />
       <path
         opacity="0.5"
@@ -56,7 +62,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("14")}
+        data-teeth-id="14"
       />
       <path
         opacity="0.5"
@@ -65,7 +71,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("15")}
+        data-teeth-id="15"
       />
       <path
         opacity="0.5"
@@ -74,7 +80,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("16")}
+        data-teeth-id="16"
       />
       <path
         opacity="0.5"
@@ -83,7 +89,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("18")}
+        data-teeth-id="18"
       />
       <path
         opacity="0.5"
@@ -92,7 +98,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("17")}
+        data-teeth-id="17"
       />
       <path
         opacity="0.5"
@@ -101,7 +107,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("21")}
+        data-teeth-id="21"
       />
       <path
         opacity="0.5"
@@ -110,7 +116,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("22")}
+        data-teeth-id="22"
       />
       <path
         opacity="0.5"
@@ -119,7 +125,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("23")}
+        data-teeth-id="23"
       />
       <path
         opacity="0.5"
@@ -128,7 +134,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("24")}
+        data-teeth-id="24"
       />
       <path
         opacity="0.5"
@@ -137,7 +143,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("25")}
+        data-teeth-id="25"
       />
       <path
         opacity="0.5"
@@ -146,7 +152,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("26")}
+        data-teeth-id="26"
       />
       <path
         opacity="0.5"
@@ -155,7 +161,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("28")}
+        data-teeth-id="28"
       />
       <path
         opacity="0.5"
@@ -164,7 +170,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("27")}
+        data-teeth-id="27"
       />
       <path
         opacity="0.5"
@@ -173,7 +179,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("31")}
+        data-teeth-id="31"
       />
       <path
         opacity="0.5"
@@ -182,7 +188,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("32")}
+        data-teeth-id="32"
       />
       <path
         opacity="0.5"
@@ -191,7 +197,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("33")}
+        data-teeth-id="33"
       />
       <path
         opacity="0.5"
@@ -200,7 +206,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("34")}
+        data-teeth-id="34"
       />
       <path
         opacity="0.5"
@@ -209,7 +215,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("35")}
+        data-teeth-id="35"
       />
       <path
         opacity="0.5"
@@ -218,7 +224,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("36")}
+        data-teeth-id="36"
       />
       <path
         opacity="0.5"
@@ -227,7 +233,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("38")}
+        data-teeth-id="38"
       />
       <path
         opacity="0.5"
@@ -236,7 +242,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("37")}
+        data-teeth-id="37"
       />
       <path
         opacity="0.5"
@@ -245,7 +251,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("41")}
+        data-teeth-id="41"
       />
       <path
         opacity="0.5"
@@ -254,7 +260,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("42")}
+        data-teeth-id="42"
       />
       <path
         opacity="0.5"
@@ -263,7 +269,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("43")}
+        data-teeth-id="43"
       />
       <path
         opacity="0.5"
@@ -272,7 +278,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("44")}
+        data-teeth-id="44"
       />
       <path
         opacity="0.5"
@@ -281,7 +287,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("45")}
+        data-teeth-id="45"
       />
       <path
         opacity="0.5"
@@ -290,7 +296,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("46")}
+        data-teeth-id="46"
       />
       <path
         opacity="0.5"
@@ -299,7 +305,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("48")}
+        data-teeth-id="48"
       />
       <path
         opacity="0.5"
@@ -308,7 +314,7 @@ export default ({ selectedTeeth, onClick }: Props) => {
         stroke="#14856B"
         strokeWidth="2"
         strokeMiterlimit="10"
-        onClick={() => handleTeethClick("47")}
+        data-teeth-id="47"
       />
       <path
         d="M144.178 56.3496V55.8382L146.098 53.736C146.324 53.4898 146.509 53.2757 146.655 53.0939C146.801 52.9102 146.909 52.7379 146.979 52.5769C147.051 52.414 147.087 52.2435 147.087 52.0655C147.087 51.861 147.038 51.6839 146.939 51.5343C146.842 51.3846 146.71 51.2691 146.541 51.1877C146.373 51.1062 146.183 51.0655 145.973 51.0655C145.75 51.0655 145.555 51.1119 145.388 51.2047C145.223 51.2956 145.095 51.4235 145.004 51.5882C144.915 51.753 144.871 51.9462 144.871 52.1678H144.2C144.2 51.8269 144.279 51.5276 144.436 51.2701C144.593 51.0125 144.807 50.8117 145.078 50.6678C145.351 50.5239 145.657 50.4519 145.996 50.4519C146.337 50.4519 146.639 50.5239 146.902 50.6678C147.165 50.8117 147.372 51.0059 147.521 51.2502C147.671 51.4945 147.746 51.7663 147.746 52.0655C147.746 52.2795 147.707 52.4888 147.629 52.6934C147.554 52.896 147.421 53.1223 147.232 53.3723C147.044 53.6204 146.784 53.9235 146.45 54.2814L145.144 55.6792V55.7246H147.848V56.3496H144.178ZM151.067 50.5314V56.3496H150.362V51.2701H150.328L148.908 52.2132V51.4973L150.362 50.5314H151.067Z"
