@@ -12,8 +12,8 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<OrdersList />} />
-          <Route path="select-teeth" element={<TeethSelectPage />} />
-          <Route path="order/:orderId" element={<OrderDetailsPage />} />
+          <Route path="/select-teeth" element={<TeethSelectPage />} />
+          <Route path="/order/:orderId" element={<OrderDetailsPage />} />
           <Route path="*" element={<h1>Invalid Path</h1>} />
         </Routes>
       </BrowserRouter>
